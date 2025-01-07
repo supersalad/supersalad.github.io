@@ -4,6 +4,8 @@ on:
   repository_dispatch:
     types: [dispatch-event]
 
+  workflow_dispatch:
+    
 jobs:
   deploy:
     runs-on: ubuntu-latest

@@ -2,7 +2,8 @@ name: Deploy to GitHub Pages
 
 on:
   repository_dispatch:
-    types: [dispatch-event]
+    types: 
+      - "deploy-tag-*"  # Will match deploy-tag-v1.0.0, deploy-tag-v2.0.0, etc.
 
   workflow_dispatch:
     inputs:

@@ -1,0 +1,32 @@
+name: Deploy to GitHub Pages
+
+on:
+  repository_dispatch:
+    types: [dispatch-event]
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout target repository
+        uses: actions/checkout@v4
+       
+      - name: Download Release Asset
+        env:
+          GITHUB_TOKEN: ${{ secrets.DEPLOY_KEY_CLASSIC }}
+        run: |
+          gh release download --repo ${{ github.repository }} --pattern "build.zip"
+          unzip build.zip -d build
+
+      - name: Copy and commit changes
+        run: |
+          # rm -r static
+          ls -la
+          cp -r build/* .
+          # rm -r build
+          ls -la
+          git config --global user.email "github-actions[bot]@users.noreply.github.com"
+          git config --global user.name "github-actions[bot]"
+          # git add .
+          # git commit -m "Deploy release ${{ github.event.release.tag_name }}"
+          # git push

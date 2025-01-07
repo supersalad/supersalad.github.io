@@ -5,6 +5,11 @@ on:
     types: [dispatch-event]
 
   workflow_dispatch:
+    inputs:
+      tagname:
+        description: 'Release tag to deploy'
+        required: true
+        type: string
     
 jobs:
   deploy:
@@ -12,12 +17,20 @@ jobs:
     steps:
       - name: Checkout target repository
         uses: actions/checkout@v4
-       
+      
+      - name: Set tag variable
+        run: |
+          if [ "${{ github.event_name }}" = "workflow_dispatch" ]; then
+            echo "RELEASE_TAG=${{ github.event.inputs.tagname }}" >> $GITHUB_ENV
+          else
+            echo "RELEASE_TAG=${{ github.event.client_payload.tagname }}" >> $GITHUB_ENV
+          fi
+
       - name: Download Release Asset
         env:
           GITHUB_TOKEN: ${{ secrets.DEPLOY_KEY_CLASSIC }}
         run: |
-          gh release download --repo https://github.com/supersalad/consultancy_webpage --pattern "build.zip"
+          gh release download --repo https://github.com/supersalad/consultancy_webpage "${{ env.RELEASE_TAG }}" --pattern "build.zip"
           unzip build.zip -d build
 
       - name: Copy and commit changes

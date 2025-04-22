@@ -1,3 +1,8 @@
+title: Andreas Folkesson
+description: Random stuff from me
+show_downloads: flase
+google_analytics:
+theme: jekyll-theme-cayman
 plugins:
   - jekyll-relative-links
 relative_links:

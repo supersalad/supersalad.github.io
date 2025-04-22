@@ -16,4 +16,4 @@ I thrive where **innovation and efficiency** go hand in hand. My approach blends
 📫 Let's connect on [LinkedIn](https://www.linkedin.com/in/andreas-folkesson-71a0538/)
 
 
-This space is for all things related to some degree to my profession.
+This space is for all things related to my profession to some degree.

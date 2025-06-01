@@ -1,3 +1,8 @@
+---
+layout: page
+title: Home
+---
+
 # 👋 Hi, I'm Andreas Folkesson
 
 I'm a passionate technology leader focused on empowering teams through modern **DevOps** and **Agile** practices. I believe great software is built in **high-trust environments**, with **well-designed systems**, and a culture of **continuous learning**—at both the team and organizational level.

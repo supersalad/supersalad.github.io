@@ -7,7 +7,7 @@ lang: en-US
 timezone: Europe/Stockholm
 
 # Theme settings
-theme: jekyll-theme-basically-basic
+remote_theme: "mmistakes/jekyll-theme-basically-basic@main"
 skin: default
 
 # Build settings

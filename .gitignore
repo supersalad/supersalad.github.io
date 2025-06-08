@@ -1,0 +1,7 @@
+# Local Jekyll development
+Gemfile
+Gemfile.lock
+.bundle/
+vendor/
+.jekyll-cache/
+_site/

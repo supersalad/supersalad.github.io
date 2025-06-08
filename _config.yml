@@ -1,12 +1,42 @@
+# Site settings
 title: Andreas Folkesson
 description: Random stuff from me
-show_downloads: false
-google_analytics:
-theme: jekyll-theme-cayman
+baseurl: ""
+url: "https://supersalad.github.io"
+lang: en-US
+timezone: Europe/Stockholm
+
+# Theme settings
+theme: jekyll-theme-basically-basic
+skin: default
+
+# Build settings
+markdown: kramdown
 plugins:
+  - jekyll-feed
+  - jekyll-seo-tag
+  - jekyll-sitemap
+  - jekyll-paginate
   - jekyll-relative-links
-relative_links:
-  enabled: true
-  collections: true
+
+# Navigation
 include:
   - README.md
+
+# Collections
+collections:
+  posts:
+    output: true
+    permalink: /:categories/:title/
+
+# Pagination settings
+paginate: 5
+paginate_path: /page:num/
+
+# Front matter defaults
+defaults:
+  - scope:
+      path: ""
+      type: pages
+    values:
+      layout: page

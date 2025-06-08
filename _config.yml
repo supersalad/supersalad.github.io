@@ -7,8 +7,8 @@ lang: en-US
 timezone: Europe/Stockholm
 
 # Theme settings
-remote_theme: "mmistakes/jekyll-theme-basically-basic@main"
-skin: default
+remote_theme: "mmistakes/jekyll-theme-basically-basic@1.4.5"
+skin: night
 
 # Build settings
 markdown: kramdown
@@ -18,6 +18,7 @@ plugins:
   - jekyll-sitemap
   - jekyll-paginate
   - jekyll-relative-links
+  - jekyll-remote-theme
 
 # Navigation
 include:

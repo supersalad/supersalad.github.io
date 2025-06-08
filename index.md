@@ -1,6 +1,6 @@
 ---
-layout: home
-title: Home
+layout: page
+title: Andreas Folkesson
 ---
 
 # 👋 Hi, I'm Andreas Folkesson

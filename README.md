@@ -1,24 +1,31 @@
----
-layout: page
-title: Home
----
+# Personal Website
 
-# 👋 Hi, I'm Andreas Folkesson
+This repository contains the source code for my personal website, built with Jekyll and hosted on GitHub Pages.
 
-I'm a passionate technology leader focused on empowering teams through modern **DevOps** and **Agile** practices. I believe great software is built in **high-trust environments**, with **well-designed systems**, and a culture of **continuous learning**—at both the team and organizational level.
+## Development Setup
 
-With deep experience in **cloud strategy** and **software architecture**, I help companies make informed decisions about their technical direction. Whether it's:
-- Guiding **cloud-native transformations**
-- Designing **scalable architectures**
-- Coaching teams in **DevOps culture**
+1. Install Ruby and Bundler if you haven't already
+2. Clone this repository
+3. Install dependencies:
+   ```
+   bundle install
+   ```
+4. Run the site locally:
+   ```
+   bundle exec jekyll serve
+   ```
+5. Visit `http://localhost:4000` in your browser
 
-…I work to bridge the gap between **business goals** and **technical execution**.
+## Adding Content
 
-I thrive where **innovation and efficiency** go hand in hand. My approach blends hands-on technical work with strategic advising—helping teams deliver high-quality software at speed, with clarity and alignment on what really matters.
+- Create new blog posts in the `_posts` directory
+- Pages can be added to the root directory with `.md` extension
+- Images and other assets go in the `assets` directory
 
----
+## Theme
 
-📫 Let's connect on [LinkedIn](https://www.linkedin.com/in/andreas-folkesson-71a0538/)
+This site uses the [Basically Basic](https://github.com/mmistakes/jekyll-theme-basically-basic) theme. See the theme documentation for customization options.
 
+## Deployment
 
-This space is for all things related to my profession to some degree.
+The site is automatically deployed to GitHub Pages when changes are pushed to the main branch.

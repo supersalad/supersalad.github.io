@@ -1,10 +1,11 @@
 # Site settings
 title: Folkesson SuperTech AB
-description: Random stuff from me
+description: Systemutveckling, konsulttjänster och utbildning inom mjukvaruutveckling.
 baseurl: "/"
-url: "https://supersalad.github.io"
+url: "https://folkessontech.com"
 lang: en-US
 timezone: Europe/Stockholm
+google_analytics: G-CJ5TS9KCYT
 author:
   name: "Andreas Folkesson"
   email: "folkesson@gmail.com"

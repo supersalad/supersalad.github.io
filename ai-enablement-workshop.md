@@ -23,3 +23,7 @@ Under de efterföljande 3–6 månaderna bokar vi in ett par uppföljningar.
 Målet är att ni ska gå därifrån med både konkreta mönster för fortsatt arbete, och insikter kring **hur och när** ni bäst integrerar AI-verktyg i er mjukvaruutvecklingsprocess.
 
 Lämpligt deltagar-antal är 3-8 personer.
+
+---
+
+[Hör gärna av dig för att få veta mer](/contact/)

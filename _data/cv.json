@@ -1,0 +1,89 @@
+{
+  "basics": {
+    "name": "Andreas Folkesson",
+    "label": "Mänsklig systemutvecklare",
+    "picture": "",
+    "email": "folkesson@gmail.com",
+    "phone": "+46 (0)78 45 36 54",
+    "website": "https://folkessontech.com",
+    "summary": "Jag brinner för att bygga bra system på rätt sätt. Bra i att de löser ett verkligt problem och gör världen bättre för någon. På rätt sätt i att de är byggda enligt beprövade metoder som har visat sig fungera över tid. Jag är en systemutvecklare med över 30 års erfarenhet av att bygga system i olika storlekar och komplexitet. Jag har arbetat med allt från små webbapplikationer till stora distribuerade system. Jag är också en passionerad mentor och coach som älskar att dela med mig av min kunskap och erfarenhet till andra",
+    "location": {
+      "address": "",
+      "postalCode": "",
+      "city": "Malmö",
+      "countryCode": "SE",
+      "region": "Skåne (med omnejd)"
+    },
+    "profiles": [
+      {
+        "network": "LinkedIn",
+        "username": "Andreas Folkesson",
+        "url": "https://www.linkedin.com/in/andreas-folkesson-71a0538/"
+      }
+    ]
+  },
+  "work": [
+    {
+      "company": "Visma",
+      "position": "Senior Architect/Cloud advisor",
+      "website": "https://www.visma.com",
+      "startDate": "2022-05-01",
+      "endDate": "2025-08-31",
+      "summary": "Som en del av Vismas centrala organisation har jag på olika sätt agerat rådgivande och stöttande mot Vismas dotterbolag och de ~6000 utvecklare som jobbar där.",
+      "highlights": [
+        "Clound migreringar",
+        "Arkitekturgranskningar",
+        "Inspirerande och utbildande föreläsningar",
+        "AI enablement",
+        "Utvärdering av verktyg och teknologier"
+      ]
+    },
+    {
+      "company": "Draftit",
+      "position": "Systemutvecklare/arkitekt",
+      "website": "https://draftit.se/",
+      "startDate": "2017-12-01",
+      "endDate": "2022-04-30",
+      "summary": "Underhåll av befintlga produkter i EPiServer, nyutveckling av nya produkter i .NET Core och React.",
+      "highlights": [
+        "Implementering av continous integration och continuous delivery",
+        "Event-driven integration",
+        "Implementation av cloudlösning i Azure"
+      ]
+    },
+    {
+      "company": "Kodexe",
+      "position": "Systemutvecklare",
+      "website": "https://draftit.se/",
+      "startDate": "2015-01-01",
+      "endDate": "2017-11-30",
+      "summary": "Web- och apputveckling, CRM, e-handel, PIM, integrationer och systemutveckling."
+    },
+    {
+      "company": "Tunstall",
+      "position": "Systemutvecklare",
+      "website": "https://www.tunstall.se/",
+      "startDate": "2007",
+      "endDate": "2014-12-31",
+      "summary": "Utveckling av system för planering och utförande för hemtjänsten."
+    },
+    {
+      "company": "BrandSystems",
+      "position": "Systemutvecklare",
+      "website": "https://www.brandsystems.com/",
+      "startDate": "2004",
+      "endDate": "2007",
+      "summary": "Utveckling av system för digital identitet - grafisk profil, mediabank etc"
+    }
+  ],
+  "languages": [
+    {
+      "language": "Svenska",
+      "fluency": "Modersmål"
+    },
+    {
+      "language": "English",
+      "fluency": "Fluent"
+    }
+  ]
+}

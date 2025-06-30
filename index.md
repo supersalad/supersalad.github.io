@@ -3,19 +3,20 @@ layout: home
 title: Folkesson SuperTech AB
 ---
 
-# 👋 Hi, I'm Andreas
+# 👋 Hej, jag heter Andreas
 
-I'm a passionate technology leader focused on empowering teams through modern **DevOps** and **Agile** practices. I believe great software is built in **high-trust environments**, with **well-designed systems**, and a culture of **continuous learning**—at both the team and organizational level.
+Jag är en teknikledare med stort engagemang för att stärka team genom moderna **DevOps-** och **agila arbetssätt**. Jag tror att riktigt bra system skapas i miljöer med **högt förtroende**, **genomtänkt systemdesign** och en kultur av **ständigt lärande** – både i teamet och på organisationsnivå.
 
-With deep experience in **cloud strategy** and **software architecture**, I help companies make informed decisions about their technical direction. Whether it's:
-- Guiding **cloud-native transformations**
-- Designing **scalable architectures**
-- Coaching teams in **DevOps culture**
+Med gedigen erfarenhet inom **systemutveckling**, **cloud** och **systemarkitektur** hjälper jag företag att fatta kloka beslut om sin tekniska riktning. Det kan handla om att:
 
-…I work to bridge the gap between **business goals** and **technical execution**.
+* Leda **molnbaserade omställningar**
+* Designa **skalbara arkitekturer**
+* Coacha team i **DevOps-kultur**
 
-I thrive where **innovation and efficiency** go hand in hand. My approach blends hands-on technical work with strategic advising—helping teams deliver high-quality software at speed, with clarity and alignment on what really matters.
+Mitt fokus ligger alltid på att överbrygga klyftan mellan **affärsmål** och **tekniskt genomförande**.
+
+Jag trivs bäst där **innovation och effektivitet** går hand i hand. Genom att kombinera praktiskt teknikarbete med strategisk rådgivning hjälper jag team att leverera lösningar av hög kvalitet – snabbt, tydligt och med fokus på det som verkligen gör skillnad.
 
 ---
 
-📫 Let's connect on [LinkedIn](https://www.linkedin.com/in/andreas-folkesson-71a0538/)
+[Hör gärna av dig](/contact/)

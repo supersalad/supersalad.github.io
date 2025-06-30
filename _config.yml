@@ -11,6 +11,7 @@ author:
   linkedin: "https://www.linkedin.com/in/andreas-folkesson-71a0538/"
 logo: # path of site logo, e.g. "/assets/images/logo.png"
 search: false # true, false (default)
+feed: false
 
 # Theme settings
 remote_theme: "mmistakes/jekyll-theme-basically-basic@1.4.5"
@@ -18,7 +19,7 @@ remote_theme: "mmistakes/jekyll-theme-basically-basic@1.4.5"
 # Build settings
 markdown: kramdown
 plugins:
-  - jekyll-feed
+  #- jekyll-feed
   - jekyll-seo-tag
   - jekyll-sitemap
   - jekyll-paginate
@@ -26,10 +27,14 @@ plugins:
   - jekyll-remote-theme
   - jekyll-include-cache
 
-# Navigation
-include:
-  - index.md
-  - ai-enablement-workshop.md
+# Compile settings
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - README.md
+  - LICENSE.txt
+  - .gitignore
+  - .jekyll-cache
 
 # Collections
 collections:

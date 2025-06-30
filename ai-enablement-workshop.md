@@ -1,26 +1,25 @@
 ---
 layout: page
-title: AI Enablement Workshop
+title: AI-workshop för utvecklingsteam
 permalink: /ai-enablement-workshop/
 ---
 
-# Accelerate development processes with AI tools
+# Påskynda utvecklingsprocesser med AI-verktyg
 
-Can AI tools and agents deliver on their promises to increase development productivity? As with most things that are complicated - it depends.
-What we can see is that learning how to use, and equally important when to use AI tools is an effort. As with all new skills it is necessary to set aside the time to explore the capabilities of the tools and apply it in your own context.
+Kan AI-verktyg och agenter verkligen leverera på löftet om ökad produktivitet för utvecklare? Som med det mesta som är komplext – det beror på.
 
-This workshop is preceeded with scoping where we look into challenges you are currently facing, and where AI tools may be a good fit to provide value.
-Example of suitable challenges are:
- * Framework upgrade (e.g. .Net Framework -> .Net Core)
- * Applying new architectural pattern
- * Test automation and extended test coverage
+Det vi ser är att det krävs en insats för att lära sig använda AI-verktyg på rätt sätt – och minst lika viktigt, att veta **när** de bör användas. Som med alla nya färdigheter behöver man avsätta tid för att utforska verktygens möjligheter och testa dem i sin egen kontext.
 
-We carve out 3 consecutive days in your calendar where we learn and explore use cases and ways of working with relevant AI tools and techniques.
+Workshopen föregås av en förstudie där vi tittar på era aktuella utmaningar, och identifierar områden där AI-verktyg kan bidra med konkret värde. Exempel på lämpliga utmaningar:
 
-In the following period (3-6 months) we schedule a couple of follow ups.
+* Uppgradering av ramverk (t.ex. från .NET Framework till .NET Core)  
+* Införande av ett nytt arkitekturmönster  
+* Utökad Testautomatisering
 
-The expected outcomes for you are both patterns to continue the work and insights on how and when to incorporate AI tools in your software development process.
+Vi reserverar tre sammanhängande dagar i er kalender för att gemensamt lära, utforska och prova användningsfall och arbetssätt med relevanta AI-verktyg och tekniker.
 
+Under de efterföljande 3–6 månaderna bokar vi in ett par uppföljningar.
 
+Målet är att ni ska gå därifrån med både konkreta mönster för fortsatt arbete, och insikter kring **hur och när** ni bäst integrerar AI-verktyg i er mjukvaruutvecklingsprocess.
 
-
+Lämpligt deltagar-antal är 3-8 personer.

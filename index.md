@@ -1,9 +1,9 @@
 ---
 layout: home
-title: Andreas Folkesson
+title: Folkesson SuperTech AB
 ---
 
-# 👋 Hi, I'm Andreas Folkesson
+# 👋 Hi, I'm Andreas
 
 I'm a passionate technology leader focused on empowering teams through modern **DevOps** and **Agile** practices. I believe great software is built in **high-trust environments**, with **well-designed systems**, and a culture of **continuous learning**—at both the team and organizational level.
 

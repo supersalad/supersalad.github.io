@@ -19,4 +19,4 @@ Jag trivs bäst där **innovation och effektivitet** går hand i hand. Genom att
 
 ---
 
-[Hör gärna av dig](/contact/)
+[Hör gärna av dig](/contact.md)

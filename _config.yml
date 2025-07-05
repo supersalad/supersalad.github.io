@@ -5,7 +5,6 @@ baseurl: "/"
 url: "https://folkessontech.com"
 lang: en-US
 timezone: Europe/Stockholm
-google_analytics: G-CJ5TS9KCYT
 author:
   name: "Andreas Folkesson"
   email: "folkesson@gmail.com"

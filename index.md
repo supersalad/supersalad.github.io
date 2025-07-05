@@ -5,7 +5,7 @@ title: Folkesson SuperTech AB
 
 # 👋 Hej, jag heter Andreas
 
-Jag är en teknikledare med stort engagemang för att stärka team genom moderna **DevOps-** och **agila arbetssätt**. Jag tror att riktigt bra system skapas i miljöer med **högt förtroende**, **genomtänkt systemdesign** och en kultur av **ständigt lärande** – både i teamet och på organisationsnivå.
+Jag hjälper team att växa och lyckas genom moderna **DevOps-** och **agila arbetssätt**. Jag tror att riktigt bra system skapas i miljöer med **högt förtroende**, **genomtänkt systemdesign** och en kultur av **ständigt lärande** – både i teamet och på organisationsnivå.
 
 Med gedigen erfarenhet inom **systemutveckling**, **cloud** och **systemarkitektur** hjälper jag företag att fatta kloka beslut om sin tekniska riktning. Det kan handla om att:
 

@@ -1,7 +1,7 @@
 {
   "basics": {
     "name": "Andreas Folkesson",
-    "label": "Mänsklig systemutvecklare",
+    "label": "Affärsorienterad systemutvecklare",
     "picture": "",
     "email": "folkesson@gmail.com",
     "phone": "+46 (0)78 45 36 54",
@@ -11,8 +11,8 @@
       "address": "",
       "postalCode": "",
       "city": "Malmö",
-      "countryCode": "SE",
-      "region": "Skåne (med omnejd)"
+      "countryCode": "",
+      "region": ""
     },
     "profiles": [
       {
@@ -31,7 +31,7 @@
       "endDate": "2025-08-31",
       "summary": "Som en del av Vismas centrala organisation har jag på olika sätt agerat rådgivande och stöttande mot Vismas dotterbolag och de ~6000 utvecklare som jobbar där.",
       "highlights": [
-        "Clound migreringar",
+        "Cloud migreringar",
         "Arkitekturgranskningar",
         "Inspirerande och utbildande föreläsningar",
         "AI enablement",

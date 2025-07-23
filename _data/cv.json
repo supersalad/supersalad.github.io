@@ -1,18 +1,18 @@
 {
   "basics": {
     "name": "Andreas Folkesson",
-    "label": "Affärsorienterad systemutvecklare",
+    "label": "Affärsorienterad arkitekt & systemutvecklare",
     "picture": "",
     "email": "folkesson@gmail.com",
     "phone": "+46 (0)78 45 36 54",
     "website": "https://folkessontech.com",
-    "summary": "Jag brinner för att bygga bra system på rätt sätt. Bra i att de löser ett verkligt problem och gör världen bättre för någon. På rätt sätt i att de är byggda enligt beprövade metoder som har visat sig fungera över tid. Jag är en systemutvecklare med över 30 års erfarenhet av att bygga system i olika storlekar och komplexitet. Jag har arbetat med allt från små webbapplikationer till stora distribuerade system. Jag är också en passionerad mentor och coach som älskar att dela med mig av min kunskap och erfarenhet till andra",
+    "summary": "Jag brinner för att bygga bra system på rätt sätt.  \n**Bra** i att de löser ett verkligt problem och gör världen bättre för någon,  \n**på rätt sätt** i att de är byggda enligt beprövade metoder som har visat sig fungera över tid.  \nMed över **30 års erfarenhet** är jag en systemutvecklare och arkitekt med bevisad skicklighet i att designa och leverera **robusta lösningar** – från små webbapplikationer till komplexa distribuerade system.  \nJag är passionerad kring **mjukvaruhantverk (software craftsmanship)**, **skalbar arkitektur** och att coacha team att blomstra genom väletablerade arbetssätt. \n\nJag har erfarenhet av och är bekväm i hela kedjan av systemutveckling. Från kravanalys och dialog med kunder och stakeholders, framtagande av MVP:er och piloter etc. Till skarpa utrullningar, underhåll och vidareutveckling. Ständigt med fokus på övergripande affärsmässiga mål.  \nJag har insikt och förståelse för de socio-tekniska aspekter som är kritiska för att nå hållbar framgång med ett projekt eller produkt. \n\nMina professionella mål inkluderar att hjälpa människor och organisationer att lyckas genom att utveckla **djupa kompetenser och erfarenheter** inom det digitala området. Jag strävar efter att fokusera på det väsentliga och värdesätta produktivitet och övergripande mål. Jag är också en passionerad **mentor och coach** som älskar att dela med mig av min kunskap och erfarenhet till andra.\n\n#### Kärnkompetenser & tekniker:\n*   **Tekniskt ledarskap:** Transformation, mentorskap/coaching, interna föreläsningar\n*   **Fullstackutveckling:** .NET Core, C#, MS SQL Server, MongoDB, React\n*   **AI-enablement:** Etablering och integration av AI-verktyg i utvecklingsprocesser\n*   **Moln & Infrastruktur:** Microsoft Azure, DevOps/DevSecOps, IaC\n*   **Arkitektur:** Distribuerade system, event-driven design, mikrotjänster\n*   **Utvecklingsmetoder:** CI/CD, testautomation, refaktorering, clean code, kodgranskning\n\n#### Tekniker, produkter & ramverk:\n*   **AI-verktyg**: GitHub Copilot, Cursor, Windsurf, Devin, Amazon Q, n8n, CodeRabbit\n*   **API-utveckling och integrationer**: REST, Azure API Management, Postman\n*	**Moln-säkerhet**: Microsoft Defender for Cloud, Orca, Cloudflare\n*   **Monitorering**: Azure App Insights, Elastic Stack (ELK = Elasticsearch, Kibana, Logstash), Stackify\n*	**Programspråk**: C#, TypeScript, Javascript, Python\n*	**Testning**: NUnit, XUnit, Moq, Cypress, Playwright\n*	**Databaser**: MS SQL Server, MongoDB\n*	**DevEx & produktivitet**: Plandek, Swarmia, DX, Jira",
     "location": {
       "address": "",
       "postalCode": "",
       "city": "Malmö",
       "countryCode": "",
-      "region": ""
+      "region": "Skåne"
     },
     "profiles": [
       {
@@ -25,30 +25,33 @@
   "work": [
     {
       "company": "Visma",
-      "position": "Senior Architect/Cloud advisor",
+      "position": "Senior Cloud Architect & Advisor",
       "website": "https://www.visma.com",
-      "startDate": "2022-05-01",
-      "endDate": "2025-08-31",
-      "summary": "Som en del av Vismas centrala organisation har jag på olika sätt agerat rådgivande och stöttande mot Vismas dotterbolag och de ~6000 utvecklare som jobbar där.",
+      "startDate": "2022",
+      "endDate": "2025",
+      "summary": "Som en del av Vismas centrala organisation har jag agerat rådgivande och stöttande mot Vismas dotterbolag och deras cirka 6000 utvecklare. Detta inkluderar även rollen som rådgivare i Vismas centrala tech-organisation.",
       "highlights": [
-        "Cloud migreringar",
-        "Arkitekturgranskningar",
-        "Inspirerande och utbildande föreläsningar",
-        "AI enablement",
+        "Arkitekturgranskningar och rådgivning för att förbättra systemdesign och kodkvalitet",
+        "Design och leverans av inspirerande teknikföreläsningar och internutbildningar",
+        "Azure - rådgivning och validering för befintliga och nya molnlösningar",
+        "AI-verktyg för systemutveckling, utvärdering av verktyg (GitHub Copilot, Cursor, Windsurf, Devin), utbildningar och workshops",
+        "Rådgivning och evangelisering för best practices inom systemutveckling (Dora/SPACE, CI/CD, DevOps, hantering av teknisk skuld m.m)",
         "Utvärdering av verktyg och teknologier"
       ]
     },
     {
       "company": "Draftit",
-      "position": "Systemutvecklare/arkitekt",
+      "position": "Systemutvecklare & Arkitekt",
       "website": "https://draftit.se/",
-      "startDate": "2017-12-01",
-      "endDate": "2022-04-30",
-      "summary": "Underhåll av befintlga produkter i EPiServer, nyutveckling av nya produkter i .NET Core och React.",
+      "startDate": "2017",
+      "endDate": "2022",
+      "summary": "Underhåll och vidareutveckling av befintliga produkter i EPiServer (Optimizely) samt nyutveckling av nya produkter i .NET Core och React. Produkter för LegalTech, som informationsprodukter och olika processverktyg inom regelefterlevnad. Migrering av äldre system till modern arkitektur med containeriserade tjänster i Azure. Implementation av Continuous Delivery, testautomatisering och Infrastructure as Code(IaC).",
       "highlights": [
-        "Implementering av continous integration och continuous delivery",
-        "Event-driven integration",
-        "Implementation av cloudlösning i Azure"
+        "Vidareutveckling och nyutveckling på legacy plattform (EPiService, C# .Net Framework, MS SQL Server)",
+        "Nyutveckling och migrering av funktionalitet till ny plattform (C# .Net Core, React, Docker, RabbitMQ, MongoDB, Azure)",
+        "Implementation av intern identitetsserver för Single Sign-On (IdentityServer4, OAuth2, OpenIdentity, Visma Connect)",
+        "Införde CI/CD-pipelines och förbättrade automatisering (TeamCity, GitHub Actions, Azure Bicep)",
+        "Designade och implementerade händelsedrivna integrationer (RabbitMQ)"
       ]
     },
     {
@@ -57,7 +60,12 @@
       "website": "https://draftit.se/",
       "startDate": "2015-01-01",
       "endDate": "2017-11-30",
-      "summary": "Web- och apputveckling, CRM, e-handel, PIM, integrationer och systemutveckling."
+      "summary": "Underhåll och nyutveckling av lösningar inom webb, CRM, e-handel, PIM och integrationer. Arbetade över hela stacken med frontend, backend och dataprocesser. Detta inkluderade konsultverksamhet inom mjukvaruutveckling på Microsoft-stacken, primärt publika webbar, handel, PIM samt mobila appar.",
+      "highlights": [
+        "Publika webbar och e-handel (C# .NET FW, EPiServer, SiteCore, MS SQL Server)",
+        "PIM system (InRiver PIM, C# .NET FW, MS SQL Server)",
+        "Mobila appar (Xamarin, C# .NET FW)"
+      ]
     },
     {
       "company": "Tunstall",
@@ -65,7 +73,12 @@
       "website": "https://www.tunstall.se/",
       "startDate": "2007",
       "endDate": "2014-12-31",
-      "summary": "Utveckling av system för planering och utförande för hemtjänsten."
+      "summary": "Underhåll och nyutveckling i ett planerings- och utförandesystem för hemtjänst och äldreomsorg (TES). Utveckling av nästa generation, från Windows-klient till webb.",
+      "highlights": [
+        "Migrering av funktionalitet från Windows klient (VB 6) till webbapplikation (C# .NET FW, ASP.NET MVC, MS SQL Server)",
+        "Använda teknologier inkluderar Javascript (jQuery, knockout.js), HTML5/CSS/LESS (Bootstrap), ASP.NET (C#), VB 6, MS SQL Server, SQL Lite",
+        "Införande av CI/CD-pipelines och testautomatisering (TeamCity, Jenkins)"
+      ]
     },
     {
       "company": "BrandSystems",
@@ -73,7 +86,22 @@
       "website": "https://www.brandsystems.com/",
       "startDate": "2004",
       "endDate": "2007",
-      "summary": "Utveckling av system för digital identitet - grafisk profil, mediabank etc"
+      "summary": "Digitala identitetsverktyg och mediabanker för att hantera grafiska profiler och mediaresurser. Arbete med design och utveckling av webbapplikationer för varumärkeshantering, inklusive mediabank, tryckgenerator och innehållshantering för varumärkesinformation. Uppstart och etablering av ett dotterbolag i Bangalore.",
+      "highlights": [
+        "Använda teknologier inkluderar ASP.NET, HTML/Javascript, MS SQL Server",
+        "På plats i Bangalore för att etablera dotterbolag och leda utvecklingsteam"
+      ]
+    },
+    {
+      "company": "Computerland/Merkantildata/Ementor",
+      "position": "Systemutvecklare",
+      "website": "https://news.cision.com/se/merkantildata",
+      "startDate": "1996",
+      "endDate": "2002",
+      "summary": "Konsult för olika projekt med kunder som Tetra Pak och Region Skåne.",
+      "highlights": [
+        "Använda teknologier inkluderar MS SQL Server, VB och ASP"
+      ]
     }
   ],
   "languages": [
@@ -83,7 +111,7 @@
     },
     {
       "language": "English",
-      "fluency": "Fluent"
+      "fluency": "Flytande, professionell nivå"
     }
   ]
 }

@@ -3,6 +3,9 @@
     {% assign intro_image = page.image.path | default: page.image | relative_url | escape %}
     <div class="intro-image">
       <img src="{{ intro_image }}" alt="{{ page.title }}">
+        <!-- {% if page.image.caption %}
+            <p class="intro-image-caption">{{ page.image.caption | markdownify }}</p>
+        {% endif %} -->
     </div>
   {% endif %}
 

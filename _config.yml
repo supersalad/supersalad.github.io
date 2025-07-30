@@ -41,6 +41,9 @@ collections:
   posts:
     output: true
     permalink: /:categories/:title/
+  services:
+    output: true
+    permalink: /:collection/:path/
 
 # Pagination settings
 paginate: 5
@@ -53,6 +56,14 @@ defaults:
       type: pages
     values:
       layout: page
+  # _services
+  - scope:
+      path: "_services"
+      type: services
+    values:
+      layout: page
+      read_time: false
+      
   - scope:
       path: "assets/**/*"
       type: "assets"

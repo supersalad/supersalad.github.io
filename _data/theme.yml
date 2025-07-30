@@ -44,6 +44,7 @@ google_fonts:
 # pages that have a `title`. Add raw page paths in the order you'd like.
 
 navigation_pages:
-   - ai-enablement-workshop.md
+   - _services/ai-enablement-workshop.md
+   - services.md
    - contact.md
    - cv.md

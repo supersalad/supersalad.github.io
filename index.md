@@ -19,5 +19,4 @@ Mitt fokus ligger alltid på att överbrygga klyftan mellan **affärsmål** och 
 Jag trivs bäst där **innovation och effektivitet** går hand i hand. Genom att kombinera praktiskt teknikarbete med strategisk rådgivning hjälper jag team att leverera lösningar av hög kvalitet – snabbt, tydligt och med fokus på det som verkligen gör skillnad.
 
 ---
-
-[Hör gärna av dig](/contact.md)
+[Hör gärna av dig](/contact)

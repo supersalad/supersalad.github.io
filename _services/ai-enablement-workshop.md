@@ -28,4 +28,8 @@ Lämpligt deltagar-antal är 3-8 personer.
 
 ---
 
+<<<<<<< HEAD
 [Hör gärna av dig för att få veta mer](/contact)
+=======
+[Hör gärna av dig för att få veta mer](/contact)
+>>>>>>> a34289040ba7a7f1ebd669cf437dd3e3cde7783a

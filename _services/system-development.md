@@ -2,8 +2,8 @@
 title: Systemutveckling
 layout: page
 image: 
-  path: /assets/images/systemdeveloper_banner.png
-  thumbnail: /assets/images/systemdeveloper_400x200.png
+  path: /assets/images/systemdeveloper_banner.webp
+  thumbnail: /assets/images/systemdeveloper_400x200.webp
   caption: Photo by <a href="https://unsplash.com/@brookecagle?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Brooke Cagle</a> on <a href="https://unsplash.com/photos/a-group-of-friends-at-a-coffee-shop--uHVRvDr7pg?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Unsplash</a>
 ---
 

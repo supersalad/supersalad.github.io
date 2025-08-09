@@ -48,3 +48,10 @@ navigation_pages:
    - services.md
    - contact.md
    - cv.md
+   - en/index.md 
+
+en_navigation_pages:
+   - _en_services/ai-enablement-workshop.md
+   - en/services.md
+   - en/contact.md
+   - index.md

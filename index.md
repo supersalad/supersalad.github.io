@@ -1,7 +1,8 @@
 ---
 layout: home
 title: Folkesson SuperTech AB
-image: /assets/images/banner_home.png
+navigation_title: Svenska
+image: /assets/images/banner_home.webp
 ---
 
 # 👋 Hej, jag heter Andreas

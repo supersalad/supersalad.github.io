@@ -8,15 +8,28 @@ layout: default
   <div class="index inner">
     <div>{{ content }}</div>
     
-    {% if site.services.size > 0 %}
-      <div>
-        <header class="section-title">
-          <h2>Vad kan jag hjälpa dig med?</h2>
-        </header>
-        <div class="entries-{{ page.entries_layout | default: 'grid' }}">
-          {% include documents-collection.html collection='services' sort_by=page.sort_by sort_order=page.sort_order %}
-        </div>
-      </div>    
+    {% if page.lang and page.lang == 'en' %}
+      {% if site.en_services.size > 0 %}
+          <div>
+            <header class="section-title">
+              <h2>What can I do for you?</h2>
+            </header>
+            <div class="entries-{{ page.entries_layout | default: 'grid' }}">
+              {% include documents-collection.html collection='en_services' sort_by=page.sort_by sort_order=page.sort_order %}
+            </div>
+          </div>    
+        {% endif %}
+    {% else %}
+      {% if site.services.size > 0 %}
+        <div>
+          <header class="section-title">
+            <h2>Vad kan jag hjälpa dig med?</h2>
+          </header>
+          <div class="entries-{{ page.entries_layout | default: 'grid' }}">
+            {% include documents-collection.html collection='services' sort_by=page.sort_by sort_order=page.sort_order %}
+          </div>
+        </div>    
+      {% endif %}
     {% endif %}
 
     {% if site.posts.size > 0 %}

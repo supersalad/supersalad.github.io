@@ -1,28 +1,48 @@
+{% assign curr_lang = page.lang | site.lang %}
+{% assign home_url = '/' %}
+{% if page.lang and site.lang and page.lang != site.lang %}
+  {% assign home_url = '/' | append: page.lang %}
+{% endif %}
+
 <nav id="primary-nav" class="site-nav" itemscope itemtype="http://schema.org/SiteNavigationElement" aria-label="Main navigation">
   <ul id="menu-main-navigation" class="menu">
     <!-- Home link -->
     <li class="menu-item">
-      <a href="{{ '/' | relative_url }}" itemprop="url">
+      <a href="{{ home_url | relative_url }}" itemprop="url">
         <span itemprop="name">{{ site.data.theme.t.home | default: 'Home' }}</span>
       </a>
     </li>
 
     <!-- site.pages links -->
     {% assign default_paths = site.pages | map: "path" %}
-    {% assign page_paths = site.data.theme.navigation_pages | default: default_paths %}
+    {% if page.lang and site.lang and page.lang != site.lang %}
+      {% assign page_paths = site.data.theme.en_navigation_pages | default: default_paths %}
+    {% else %}
+      {% assign page_paths = site.data.theme.navigation_pages | default: default_paths %}
+    {% endif %}
 
     {% for path in page_paths %}
       {% assign my_page = site.pages | where: "path", path | first %}
-       {% if my_page == nil %}
-            {% assign my_page = site.services | where: "path", path | first %}
+        {% if my_page == nil %}
+          {% assign my_page = site.services | where: "path", path | first %}
         {% endif %}
-      {% if my_page.title %}
-        <li class="menu-item">
-          <a href="{{ my_page.url | relative_url }}" itemprop="url">
-            <span itemprop="name">{{ my_page.title | escape }}</span>
-          </a>
-        </li>
+        
+        {% if my_page.navigation_title %}
+          <li class="menu-item">
+            <a href="{{ my_page.url | relative_url }}" itemprop="url">
+              <span itemprop="name">{{ my_page.navigation_title | escape }}</span>
+            </a>
+          </li>
+        {% else %}
+          {% if my_page.title %}
+            <li class="menu-item">
+              <a href="{{ my_page.url | relative_url }}" itemprop="url">
+                <span itemprop="name">{{ my_page.title | escape }}</span>
+              </a>
+            </li>
+          {% endif %}
       {% endif %}
+      
     {% endfor %}
   </ul>
 </nav>

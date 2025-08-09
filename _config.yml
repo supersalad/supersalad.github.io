@@ -9,7 +9,7 @@ author:
   name: "Andreas Folkesson"
   email: "folkesson@gmail.com"
   linkedin: "https://www.linkedin.com/in/andreas-folkesson-71a0538/"
-logo: /assets/images/headshot_circle.png
+logo: /assets/images/headshot_circle.webp
 search: false # true, false (default)
 feed: false
 
@@ -44,6 +44,9 @@ collections:
   services:
     output: true
     permalink: /:collection/:path/
+  en_services:
+    output: true
+    permalink: /:collection/:path/
 
 # Pagination settings
 paginate: 5
@@ -63,7 +66,14 @@ defaults:
     values:
       layout: page
       read_time: false
-      
+  # _en_services
+  - scope:
+      path: "_en_services"
+      type: en_services
+    values:
+      layout: page
+      read_time: false
+
   - scope:
       path: "assets/**/*"
       type: "assets"

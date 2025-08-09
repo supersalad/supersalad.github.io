@@ -1,0 +1,28 @@
+{% assign site_logo = site.logo | relative_url %}
+{% assign curr_lang = page.lang | site.lang %}
+{% assign home_url = '/' %}
+{% if page.lang and site.lang and page.lang != site.lang %}
+  {% assign home_url = '/' | append: page.lang %}
+{% endif %}
+
+<header id="masthead">
+  <div class="inner">
+    <div class="title-area">
+      {% if page.url == '/' %}
+        <h1 class="site-title">
+          <a href="{{ home_url | relative_url }}">
+            {% if site.logo %}<img src="{{ site_logo }}" alt="" class="site-logo">{% endif %}
+            <span>{{ site.title | escape }}</span>
+          </a>
+        </h1>
+      {% else %}
+        <p class="site-title">
+          <a href="{{ home_url | relative_url }}">
+            {% if site.logo %}<img src="{{ site_logo }}" alt="" class="site-logo">{% endif %}
+            <span>{{ site.title | escape }}</span>
+          </a>
+        </p>
+      {% endif %}
+    </div>
+  </div>
+</header>

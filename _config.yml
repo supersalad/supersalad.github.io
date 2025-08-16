@@ -12,6 +12,7 @@ author:
 logo: /assets/images/headshot_circle.webp
 search: false # true, false (default)
 feed: false
+permalink: pretty
 
 # Theme settings
 remote_theme: "mmistakes/jekyll-theme-basically-basic@1.4.5"

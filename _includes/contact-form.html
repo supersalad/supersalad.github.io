@@ -52,11 +52,19 @@
   {% assign intro = page.form-intro | markdownify  %}
 {% endif %}
 
+{% assign pre-load = page.form-pre-load | default: false %}
+
+{% if pre-load == false %}
 <div id="show-form">
     <button id="toggle-form" class="btn btn-primary" onclick="toggleForm()">{{ calltoaction }}</button>
 </div>
+    {% assign form-hidden-class = 'hidden' %}
+{% else %}
+    {% assign form-hidden-class = '' %}
+{% endif %}
 
-<div id="contact-form" class="hidden">
+
+<div id="contact-form" class="{{form-hidden-class}}">
 <form action="https://docs.google.com/forms/d/e/1FAIpQLSdUFRkx-2pq_yjzAb6MuEOFkofBMYIVDR1gV5fQaYrDRZwjmg/formResponse"
       target="_blank"
       id="googleForm"

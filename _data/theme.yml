@@ -45,13 +45,15 @@ google_fonts:
 
 navigation_pages:
    - _services/ai-enablement-workshop.md
-   - services.md
+   - _services/advisor.md
+   - _services/system-development.md
    - contact.md
    - cv.md
    - en/index.md 
 
 en_navigation_pages:
    - _en_services/ai-enablement-workshop.md
-   - en/services.md
+   - _en_services/advisor.md
+   - _en_services/system-development.md
    - en/contact.md
    - index.md

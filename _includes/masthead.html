@@ -24,5 +24,56 @@
         </p>
       {% endif %}
     </div>
+
+
   </div>
+  
+
+  <div class="top-navigation">
+    <nav id="primary-nav" class="site-nav" itemscope itemtype="http://schema.org/SiteNavigationElement" aria-label="Main navigation">
+      <ul id="menu-main-navigation" class="menu">
+        <!-- site.pages links -->
+        {% assign default_paths = site.pages | map: "path" %}
+        {% if page.lang and site.lang and page.lang != site.lang %}
+          {% assign page_paths = site.data.theme.en_navigation_pages | default: default_paths %}
+        {% else %}
+          {% assign page_paths = site.data.theme.navigation_pages | default: default_paths %}
+        {% endif %}
+
+        {% for path in page_paths %}
+          {% assign my_page = site.pages | where: "path", path | first %}
+            {% if my_page == nil %}
+              {% assign my_page = site.services | where: "path", path | first %}
+            {% endif %}
+            {% if my_page == nil %}
+              {% assign my_page = site.en_services | where: "path", path | first %}
+            {% endif %}
+
+
+            {% if my_page.navigation_title %}
+              {% assign menu_title = my_page.navigation_title %}
+            {% else %}
+              {% if my_page.title %}
+                {% assign menu_title = my_page.title %}
+              {% endif %}
+            {% endif %}
+
+            {% if my_page.cta %}
+              {% assign cta_class = 'btn btn-primary' %}
+            {% else %}
+              {% assign cta_class = '' %}
+            {% endif %}
+            
+              <li class="menu-item {{cta_class}}">
+                <a href="{{ my_page.url | relative_url }}" itemprop="url">
+                  <span itemprop="name">{{ menu_title | escape }}</span>
+                </a>
+              </li>
+
+        {% endfor %}
+      </ul>
+    </nav>
+
+  </div>
+  
 </header>

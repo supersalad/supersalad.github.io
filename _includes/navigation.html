@@ -26,6 +26,9 @@
         {% if my_page == nil %}
           {% assign my_page = site.services | where: "path", path | first %}
         {% endif %}
+        {% if my_page == nil %}
+          {% assign my_page = site.en_services | where: "path", path | first %}
+        {% endif %}
         
         {% if my_page.navigation_title %}
           <li class="menu-item">

@@ -22,6 +22,13 @@ This repository contains the source code for my personal website, built with Jek
 - Pages can be added to the root directory with `.md` extension
 - Images and other assets go in the `assets` directory
 
+## Adding google forms
+1. Create google form
+2. Go to https://stefano.brilli.me/google-forms-html-exporter to generate html
+3. Create html form as include in _includes
+4. See example in contact-form.html for example on reload free posting
+
+
 ## Theme
 
 This site uses the [Basically Basic](https://github.com/mmistakes/jekyll-theme-basically-basic) theme. See the theme documentation for customization options.

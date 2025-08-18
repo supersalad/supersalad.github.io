@@ -1,0 +1,35 @@
+---
+# Only the main Sass file needs front matter (the dashes are enough)
+---
+
+@charset "utf-8";
+
+// Theme skin
+@import "basically-basic/themes/{{ site.data.theme.skin | default: 'default' }}";
+
+@import "basically-basic";
+
+
+.hidden { display: none; }
+
+.form-control.short-paragraph {
+  width: 100%;
+  padding: 0.5em;
+
+}
+
+.form-control.long-paragraph {
+  width: 100%;
+  padding: 0.5em;
+}
+
+/** Change the border, margin, and padding in all browsers (opinionated). */
+fieldset { margin: 0 2px; padding: 0.35em 0.625em 0.75em; border: 0px; }
+
+
+.information {
+    padding: 0.5em;
+    background-color: #0d4d01;
+    border: 1px solid #0d4d01;
+    border-radius: 0.25rem;
+}

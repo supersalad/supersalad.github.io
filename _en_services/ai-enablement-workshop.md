@@ -6,6 +6,12 @@ image:
   path: /assets/images/ai_workshop_banner.webp
   thumbnail: /assets/images/ai_workshop_400x200.webp
   caption: Photo by <a href="https://unsplash.com/@marvelous?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Marvin Meyer</a> on <a href="https://unsplash.com/photos/people-sitting-down-near-table-with-assorted-laptop-computers-SYTO3xs06fU?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Unsplash</a>
+
+form-calltoaction: Contact me to learn more
+form-thankyou: Thanks for reaching out!<br>I'll get back to you as soon as possible
+form-header: Fill in to get contacted
+form-intro: Initial consultations are always free of charge.
+
 ---
 ## Accelerate development processes with AI tools
 
@@ -27,6 +33,4 @@ The goal is for you to leave with both concrete patterns for continued work, and
 
 A suitable number of participants is 3-8 people.
 
----
-
-[Feel free to contact me to learn more](/en/contact)
+{% include contact-form.html %}

@@ -5,6 +5,11 @@ image:
   path: /assets/images/systemdeveloper_banner.webp
   thumbnail: /assets/images/systemdeveloper_400x200.webp
   caption: Photo by <a href="https://unsplash.com/@brookecagle?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Brooke Cagle</a> on <a href="https://unsplash.com/photos/a-group-of-friends-at-a-coffee-shop--uHVRvDr7pg?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Unsplash</a>
+
+form-calltoaction: Stärk ert team med en erfaren utvecklare
+form-thankyou: Tack för din kontakt!<br>Jag återkommer så snart som möjligt.
+form-header: Fyll i för att bli kontaktad
+form-intro: Inledande samtal är alltid kostnadsfria.
 ---
 
 # Legacy, nyutveckling och allt däremellan
@@ -45,4 +50,4 @@ En väl anpassad arkitektur, synliggjord och hanterad teknisk skuld och automati
 * Och mycket annat (läs mer i mitt [CV](/cv))
 
 
-[Hör av dig för att diskutera vad du behöver hjälp med](/contact)
+{% include contact-form.html %}

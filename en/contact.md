@@ -26,4 +26,4 @@ andreas@folkessontech.com
 +46 (0)78 45 36 54
 
 ### LinkedIn
-[Andreas on LinkedIn](https://www.linkedin.com/in/andreas-folkesson-71a0538/)
+[Andreas on LinkedIn](https://www.linkedin.com/in/folkesson-andreas/)

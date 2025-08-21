@@ -20,7 +20,7 @@ Jag är nyfiken på att höra vilka utmaningar ni står inför. Hör av dig!
 
 ...det går även bra med:
 ### Mail
-folkesson@gmail.com
+andreas@folkessontech.com
 
 ### Telefon
 +46 (0)78 45 36 54

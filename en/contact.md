@@ -20,7 +20,7 @@ I'm curious to hear about the challenges you are facing. Get in touch!
 
 Or reach out via other channels...
 ### Email
-folkesson@gmail.com
+andreas@folkessontech.com
 
 ### Phone
 +46 (0)78 45 36 54

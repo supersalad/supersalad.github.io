@@ -51,9 +51,16 @@ navigation_pages:
    - cv.md
    - en/index.md 
 
+misc_navigation_pages:
+   - services.md
+   - posts.md
+   
 en_navigation_pages:
    - _en_services/ai-enablement-workshop.md
    - _en_services/advisor.md
    - _en_services/system-development.md
    - en/contact.md
    - index.md
+
+en_misc_navigation_pages:
+   - en/services.md

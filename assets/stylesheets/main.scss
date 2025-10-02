@@ -13,10 +13,12 @@
 #masthead{
   display: flex;
   align-items: center; // vertical alignment
-  
+  position: relative;
+  z-index: 1000;
+ 
   .top-navigation {
     nav {
-      ul {
+      ul.menu-top-level {
         display: flex;
         justify-content: center;
         align-items: center;
@@ -31,6 +33,39 @@
       }
     }
   }
+}
+
+.has-dropdown {
+  position: relative; /* dropdown will be positioned relative to this */
+}
+
+.has-dropdown .dropdown { 
+  position: fixed;
+  top: 100%; /* right below the parent item */
+  left: 0;
+  background-color: #252a34;
+  z-index: 1010; /* above other content */
+
+    /* vertical stacking */
+  display: block;       /* override flex/inline-block from parent */
+  list-style: none;
+  padding: 0;
+  margin: 0;
+
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.3s ease;
+}
+.has-dropdown.open .dropdown { 
+  max-height: 500px; /* or large enough to fit all items */
+  display: block;        /* shown when parent has .open */
+}
+
+/* Dropdown items stacked vertically */
+.has-dropdown .dropdown li {
+  display: block;       /* vertical stacking */
+  padding: 0.5rem 1rem;
+  white-space: nowrap;  /* prevent wrapping */
 }
 
 // Sidebar toggle for mobile

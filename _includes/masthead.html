@@ -1,8 +1,10 @@
 {% assign site_logo = site.logo | relative_url %}
 {% assign curr_lang = page.lang | site.lang %}
 {% assign home_url = '/' %}
+{% assign misc_menu_text = 'Övrigt' %}
 {% if page.lang and site.lang and page.lang != site.lang %}
   {% assign home_url = '/' | append: page.lang %}
+  {% assign misc_menu_text = 'Misc' %}
 {% endif %}
 
 <header id="masthead">
@@ -31,7 +33,7 @@
 
   <div class="top-navigation">
     <nav id="primary-nav" class="site-nav" itemscope itemtype="http://schema.org/SiteNavigationElement" aria-label="Main navigation">
-      <ul id="menu-main-navigation" class="menu">
+      <ul id="menu-main-navigation" class="menu menu-top-level">
         <!-- site.pages links -->
         {% assign default_paths = site.pages | map: "path" %}
         {% if page.lang and site.lang and page.lang != site.lang %}
@@ -71,6 +73,52 @@
               </li>
 
         {% endfor %}
+
+
+        <!-- misc_navigation links -->
+        
+        {% if page.lang and site.lang and page.lang != site.lang %}
+          {% assign misc_page_paths = site.data.theme.en_misc_navigation_pages %}
+        {% else %}
+          {% assign misc_page_paths = site.data.theme.misc_navigation_pages %}
+        {% endif %}
+         
+      <li class="menu-item has-dropdown">
+            <a href="#" class="dropdown-toggle">
+              <span itemprop="name">{{ misc_menu_text }}</span>
+            </a>
+            <ul class="dropdown">
+        {% for path in misc_page_paths %}
+        
+            {% assign my_page = site.pages | where: "path", path | first %}
+            {% if my_page == nil %}
+              {% assign my_page = site.services | where: "path", path | first %}
+            {% endif %}
+            {% if my_page == nil %}
+              {% assign my_page = site.en_services | where: "path", path | first %}
+            {% endif %}
+
+
+            {% if my_page.navigation_title %}
+              {% assign menu_title = my_page.navigation_title %}
+            {% else %}
+              {% if my_page.title %}
+                {% assign menu_title = my_page.title %}
+              {% endif %}
+            {% endif %}
+            
+              <li class="menu-item">
+                <a href="{{ my_page.url | relative_url }}" itemprop="url">
+                  <span itemprop="name">{{ menu_title | escape }}</span>
+                </a>
+              </li>
+
+         
+        {% endfor %}
+    
+          </ul>
+      </ul>
+    </li>
       </ul>
     </nav>
 

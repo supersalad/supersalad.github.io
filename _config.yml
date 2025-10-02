@@ -41,7 +41,7 @@ exclude:
 collections:
   posts:
     output: true
-    permalink: /:categories/:title/
+    permalink: /:collection/:title/
   services:
     output: true
     permalink: /:collection/:path/

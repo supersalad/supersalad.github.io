@@ -1,5 +1,6 @@
 ---
 title: AI-workshop för utvecklare
+description: AI-workshop för utvecklare i Malmö, Lund och Skåne. Utforska AI-verktyg i er kodbas för att påskynda utvecklingsprocessen och skapa mer värde.
 layout: page
 image: 
   path: /assets/images/ai_workshop_banner.webp

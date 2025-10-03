@@ -12,7 +12,7 @@ image:
 
 ---
 
-*DORA är ett löpande forskningsprojekt som undersöker kopplingar mellan hur systemutveckling bedrivs och önskade utkomster som ökad lönsamhet, tillväxt, minskad utbrändhet, etc. Läs mer på [DORA.dev](https://dora.dev)*
+*DORA är ett löpande forskningsprojekt som undersöker kopplingar mellan hur systemutveckling bedrivs och önskade utkomster som ökad lönsamhet, tillväxt, minskad utbrändhet, etc. Läs mer på [DORA.dev](https://dora.dev){:target="_blank" rel="noopener noreferrer"}*
 
 #### AI vs GenAI vs LLMs etc
 Precis som med andra begrepp i vår branch slarvas det med vad saker egentligen betyder. **Artificiell Intelligens (AI)** säger i sig inte så mycket om vad vi menar. I det följande menar jag vertyg och agenter (system som kan agera helt eller delvis på egen hand) som i någon mån utnyttjar **Large Language Models (LLM)** - och den verktygsflora som växer fram kring den här tekniken.

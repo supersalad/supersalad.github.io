@@ -12,7 +12,7 @@ image:
 
 ---
 
-_DORA är ett löpande forskningsprojekt som undersöker kopplingar mellan hur systemutveckling bedrivs och önskade utkomster som ökad lönsamhet, tillväxt, minskad utbrändhet, etc. Läs mer på [DORA.dev](https://dora.dev)_
+_DORA är ett löpande forskningsprojekt som undersöker kopplingar mellan hur systemutveckling bedrivs och önskade utkomster som ökad lönsamhet, tillväxt, minskad utbrändhet, etc. Läs mer på [DORA.dev](https://dora.dev){:target="_blank" rel="noopener noreferrer"}_
 
 ## Vad är en värdekedja?
 En värdekedja, eller värdeflöde, är det sammanhängande flöde av aktiviteter som krävs för att gå från en idé till levererad kundnytta.  

@@ -61,12 +61,12 @@ Med andra ord: om du bara mäter på individnivå (”utvecklarna är nöjda, de
    Men bara om det faktiskt går att komma åt.  
 
 4. **Versionshantering och rollback**  
-   Självklarheter, men värt att tänka på. Rollbacks är inte bara teknik, de är ett psykologiskt säkerhetsnät. Utan det vågar du inte experimentera, och experimenterandet är där AI blir värdefullt.  
-   Utöver att det finns ett källkodssystem, har man branching strategier, verktyg och miljöer som stöttar ett innovativt och experimenterande arbetssätt?  
+   Självklarheter, men värt att tänka på. Rollbacks är inte bara teknik, de är ett psykologiskt säkerhetsnät. Utan det vågar du inte experimentera, och experimenterandet är där kunskapen kring AI-verktygen växer och kan utvecklas till något värdefullt.  
+   Utöver att det finns ett källkodssystem, har man branching-strategier, verktyg och miljöer som stöttar ett innovativt och experimenterande arbetssätt?  
 
 5. **Små ändringar**  
-   Också en klassisk DevOps-princip som blir ännu viktigare när AI är med och producerar kod i hög takt. Stora, klumpiga förändringar + AI = dyrt haveri.  
-   Under överskådlig framtid behövs det människor i loopen, och våra biologiska förutsättningar gör att vi enklare och med större säkerhet kan släppa igenom små, begränsade ändringar.  
+   Också en klassisk agil princip som blir ännu viktigare när AI är med och producerar kod i hög takt. Stora, klumpiga förändringar parat med AI kan bli ett dyrt haveri.  
+   Under överskådlig framtid behövs det människor i loopen, och våra biologiska förutsättningar gör att vi oftare och med större säkerhet kan släppa igenom små, begränsade ändringar.  
 
 6. **Användarfokus**  
    Det är lätt att fastna i fascination över hur mycket kod AI kan spotta ur sig. Men värdet kommer inte från mängden kod, utan från användarnyttan. AI bör förstärka värdeskapandet, inte bara produktionsvolymen.  
@@ -92,9 +92,9 @@ Hur bör du agera om du vill använda AI på ett sätt som ger verkligt värde? 
    Gör tydligt var AI får användas och inte. Inte för att strypa innovation, utan för att ge spelregler som ökar tryggheten.
 
 3. **Investera i kompetenshöjning.**  
-   Utvecklare behöver lära sig *hur* man använder AI, inte bara *att* man får använda AI. Fokus bör ligga på att guida, utvärdera och verifiera – inte att ta för givet.  
-   Kurser i all ära, men den verkliga vinsten kommer när man får tid att experimentera och lära sig tillsammans. I sin egen kontext.
-
+   Utvecklare behöver lära sig *hur* man använder AI, inte bara *att* man får använda AI.  
+   Fokus bör ligga på att guida, utvärdera och verifiera. Kurser i all ära, men den verkliga vinsten kommer när man får tid att experimentera och lära sig tillsammans. I sin egen kontext. 
+   
 4. **Mät på rätt nivå.**  
    Fråga inte bara ”tycker ni att AI är bra?” Mät ledtid, genomströmning, stabilitet och användarnöjdhet. Rätt använt kan AI-verktyg flytta nålen för det som är viktigt.  
    Om de inte gör det, se till de grundläggande förutsättningarna ovan.

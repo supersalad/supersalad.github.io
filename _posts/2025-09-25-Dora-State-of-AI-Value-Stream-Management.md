@@ -33,7 +33,7 @@ En enkel startpunkt är att fråga teamet:
 
 Om svaret är nej, eller väcker fler frågor än svar, är det här ni ska börja.
 
-## Hur ni kan börja?
+## Hur man kan börja
 1. **Kartlägg flödet:** från idé till levererad kundnytta. (Whiteboard och post-its)
 2. **Identifiera hinder:** där arbete fastnar eller tappar tempo. Här kan det vara läge att verifiera antaganden genom att titta på data.  
 Finns inte rätt data? Fundera på hur man får fram det.  

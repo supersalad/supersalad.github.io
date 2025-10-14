@@ -49,6 +49,6 @@ A well-adapted architecture, visible and managed technical debt, and automation 
 * Python
 * Jekyll
 * Kubernetes
-* And much more (read more in my [CV](/assets/docs/Andreas_Folkesson_CV_en_250723.pdf))
+* And much more (read more in my [CV](/assets/docs/Andreas_Folkesson_CV_en_250821.pdf))
 
 {% include contact-form.html %}

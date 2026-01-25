@@ -24,6 +24,32 @@
   },
   "work": [
     {
+      "company": "Axis",
+      "position": "Systemutvecklare",
+      "website": "https://www.axis.com/",
+      "startDate": "2026",
+      "endDate": "",
+      "summary": "Underhåll och utveckling i AXIS Camera Station Pro.",
+      "highlights": [
+      ]
+    },
+    {
+      "company": "Shopspray",
+      "position": "Systemutvecklare",
+      "website": "https://shopspray.com/",
+      "startDate": "2025",
+      "endDate": "2026",
+      "summary": "Utveckling och vidareutveckling av Shopsprays B2B-integrationsprodukter som möjliggör sömlös punchout-integration mellan e-handelsplattformar och kunders inköpssystem (ERP/Procurement).",
+      "highlights": [
+        "Frontendutveckling i Svelte för konfigurations- och administrationsgränssnitt (Svelte, TypeScript)",
+        "OpenTelemetry-instrumentering för systemet i Azure (OpenTelemetry, Sentry, Grafana)",
+        "Utveckling och förbättring av CI/CD-flöden i Azure DevOps för automatiserad bygg, test och release av NuGet-paket (Azure DevOps)",
+        "Etablering av test- och utvecklingsmiljöer i Azure med Infrastructure as Code (Azure Bicep)",
+        "Utveckling av dashboard för övervakning och visualisering av data (.NET Core, Entity Framework, SQL Server)",
+        "Arkitektur- och implementationsarbete för att möjliggöra att kunder kan självhosta den molnbaserade produkten PunchoutPilot. (Microsoft Entra ID, OpenIdentity)"
+      ]
+    },
+    {
       "company": "Visma",
       "position": "Senior Cloud Architect & Advisor",
       "website": "https://www.visma.com",

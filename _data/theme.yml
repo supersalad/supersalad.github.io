@@ -17,7 +17,7 @@ t:
   page: "Sida"
   of: "av"
   min_read: "min läsning"
-  present: "Presentera"
+  present: "nuvarande"
   cv_awards: "Utmärkelser"
   cv_summary_contact: "Kontakt"
   cv_summary_contact_email: "E-post"

@@ -27,7 +27,8 @@ The English contact page shows the same phone number as the Swedish one: `+46 (0
 - Do not add a `tel:` link or otherwise change the formatting/markup; the issue only requires matching the Swedish page, which has no `tel:` link.
 
 ## Status
-state: ready-for-dev   <!-- ready-for-dev | in-progress | in-review | approved | blocked -->
+state: in-progress   <!-- ready-for-dev | in-progress | in-review | approved | blocked -->
 
 ## Log
 - 2026-11-16 coordinator: task created
+- 2026-11-16 developer: started work

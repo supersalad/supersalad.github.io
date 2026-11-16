@@ -37,7 +37,7 @@ gh api user --jq .login   # must print folkessontechagent; stop otherwise
 ```bash
 R=repos/supersalad/supersalad.github.io
 gh api $R/issues/<n>                                    # issue or PR metadata (title, body, labels, author)
-gh api $R/issues/<n>/comments                           # conversation comments (issues and PRs)
+gh api --paginate $R/issues/<n>/comments                # conversation comments (issues and PRs)
 gh api $R/issues/<n>/comments -F body=@/tmp/comment.md  # post a comment
 gh api $R/issues/<n>/labels -f "labels[]=<label>"       # add a label
 gh api -X DELETE $R/issues/<n>/labels/<label>           # remove a label (404 = not present)
@@ -45,8 +45,8 @@ gh api $R/pulls -f title="<t>" -f head=<branch> -f base=main -F body=@/tmp/pr.md
 gh api "$R/pulls?head=supersalad:<branch>&state=open"   # find the PR for a branch
 gh api $R/pulls/<pr>                                    # PR metadata (head.ref, state)
 gh api $R/pulls/<pr> -H "Accept: application/vnd.github.diff"   # PR diff
-gh api $R/pulls/<pr>/comments                           # inline review comments
-gh api $R/pulls/<pr>/reviews                            # reviews
+gh api --paginate $R/pulls/<pr>/comments                # inline review comments
+gh api --paginate $R/pulls/<pr>/reviews                 # reviews
 ```
 
 ## Task file (state)
@@ -54,7 +54,7 @@ gh api $R/pulls/<pr>/reviews                            # reviews
 - One file per issue: `.agents/tasks/issue-<number>.md`, created by the Coordinator from [tasks/TEMPLATE.md](tasks/TEMPLATE.md), committed on the feature branch.
 - It lives under `.agents/` because Jekyll skips dot-directories. A root-level `todo.md` would be published on folkessontech.com (GitHub Pages enables `jekyll-optional-front-matter`), and two issues would conflict on the same file.
 - The Developer ticks checkboxes and appends to the Log as it works, committing as it goes.
-- Review rounds are counted from the PR itself: the number of comments containing `Validator: CHANGES REQUESTED`. Max 3; after that the Validator asks for a human.
+- Review rounds are counted from the PR itself (always fetch comments with `gh api --paginate`): the number of comments containing `Validator: CHANGES REQUESTED`. Max 3; after that the Validator asks for a human.
 
 ## Labels
 

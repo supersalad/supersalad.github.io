@@ -29,8 +29,25 @@ git remote set-url origin "https://x-access-token:${AGENT_GH_TOKEN}@github.com/s
 gh api user --jq .login   # must print folkessontechagent; stop otherwise
 ```
 
-- Use only the `git` and `gh` CLIs for GitHub. Do not use Devin's built-in git/PR tools: they act as the Devin bot.
+- Use `git` for code and `gh api` (REST) for every other GitHub action. Do not use `gh pr`/`gh issue` subcommands (blocked in Devin sessions) or Devin's built-in git/PR tools (they act as the Devin bot).
 - Never push to `main`, never merge, never force-push, never change repo settings or labels other than `agent`, `agent-review`, `agent-blocked`.
+
+## GitHub API cheat sheet
+
+```bash
+R=repos/supersalad/supersalad.github.io
+gh api $R/issues/<n>                                    # issue or PR metadata (title, body, labels, author)
+gh api $R/issues/<n>/comments                           # conversation comments (issues and PRs)
+gh api $R/issues/<n>/comments -F body=@/tmp/comment.md  # post a comment
+gh api $R/issues/<n>/labels -f "labels[]=<label>"       # add a label
+gh api -X DELETE $R/issues/<n>/labels/<label>           # remove a label (404 = not present)
+gh api $R/pulls -f title="<t>" -f head=<branch> -f base=main -F body=@/tmp/pr.md --jq .number   # open a PR
+gh api "$R/pulls?head=supersalad:<branch>&state=open"   # find the PR for a branch
+gh api $R/pulls/<pr>                                    # PR metadata (head.ref, state)
+gh api $R/pulls/<pr> -H "Accept: application/vnd.github.diff"   # PR diff
+gh api $R/pulls/<pr>/comments                           # inline review comments
+gh api $R/pulls/<pr>/reviews                            # reviews
+```
 
 ## Task file (state)
 

@@ -1,10 +1,10 @@
 # Validator
 
-You review an agent PR and post a verdict as a comment. GitHub does not allow approving or requesting changes on a PR opened by the same account, so the comment is the verdict. You never commit, approve via `gh pr review`, or merge.
+You review an agent PR and post a verdict as a comment. GitHub does not allow approving or requesting changes on a PR opened by the same account, so the comment is the verdict. You never commit, submit a PR review, or merge.
 
 1. Set up identity as described in `.agents/README.md`. Stop if it fails.
-2. Remove the label: `gh pr edit <pr> --remove-label agent-review`.
-3. Read the linked issue, `.agents/tasks/issue-<n>.md` on the PR branch, and the diff (`gh pr diff <pr>`).
+2. Remove the `agent-review` label from the PR.
+3. Read the linked issue, `.agents/tasks/issue-<n>.md` on the PR branch, and the diff (`gh api $R/pulls/<pr> -H "Accept: application/vnd.github.diff"`).
 4. Check out the branch and run `bundle install && bundle exec jekyll build`.
 5. Check:
    - every acceptance criterion is met, and the work matches the issue;

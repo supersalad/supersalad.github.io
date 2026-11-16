@@ -13,19 +13,19 @@ Replace the private address `folkesson@gmail.com` with the official address `And
 - Language impact: both (site-wide config and CV data; no translated copies of the address exist).
 
 ## Acceptance criteria
-- [ ] `_config.yml` has `author.email: "Andreas@folkessontech.com"`
-- [ ] `_data/cv.json` has `"email": "Andreas@folkessontech.com"` in `basics`
-- [ ] `git grep -i 'folkesson@gmail'` returns no matches (this task file excluded, as it quotes the old address)
-- [ ] `_data/cv.json` is still valid JSON (e.g. `ruby -rjson -e 'JSON.parse(File.read("_data/cv.json"))'`)
-- [ ] Diff only touches the email value on those two lines (plus this task file)
-- [ ] `bundle exec jekyll build` succeeds
+- [x] `_config.yml` has `author.email: "Andreas@folkessontech.com"`
+- [x] `_data/cv.json` has `"email": "Andreas@folkessontech.com"` in `basics`
+- [x] `git grep -i 'folkesson@gmail'` returns no matches (this task file excluded, as it quotes the old address)
+- [ ] `_data/cv.json` is still valid JSON (e.g. `ruby -rjson -e 'JSON.parse(File.read("_data/cv.json"))'`) — not met on main either: raw tab characters in `basics.summary` (pre-existing, out of scope); validity is unchanged by this task
+- [x] Diff only touches the email value on those two lines (plus this task file)
+- [x] `bundle exec jekyll build` succeeds
 
 ## Plan
 - [x] Replace the email value in `_config.yml` (`author.email`), keeping the existing quoting
 - [x] Replace the email value in `_data/cv.json` (`basics.email`), keeping formatting
 - [x] Run `git grep -i 'folkesson@gmail' -- ':!.agents/tasks/'` and confirm no matches
 - [x] Validate `_data/cv.json` parses as JSON
-- [ ] Run `bundle exec jekyll build` and confirm success
+- [x] Run `bundle exec jekyll build` and confirm success
 
 ## Out of scope
 - Phone numbers, LinkedIn links or any other contact details
@@ -42,3 +42,4 @@ state: in-progress   <!-- ready-for-dev | in-progress | in-review | approved | b
 - 2026-11-16 dev: replaced basics.email in _data/cv.json
 - 2026-11-16 dev: `git grep -i 'folkesson@gmail' -- ':!.agents/tasks/'` returns no matches
 - 2026-11-16 dev: strict JSON parse of _data/cv.json fails on both main and this branch (raw tab characters inside the `basics.summary` string, line 9); pre-existing and out of scope, not fixed. The file parses with a lenient parser, the new email value is read correctly, and Jekyll loads it fine
+- 2026-11-16 dev: `bundle exec jekyll build` succeeds; `_site/cv/index.html` shows the new address and `_site` has no occurrence of the old one

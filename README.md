@@ -33,6 +33,10 @@ This repository contains the source code for my personal website, built with Jek
 
 This site uses the [Basically Basic](https://github.com/mmistakes/jekyll-theme-basically-basic) theme. See the theme documentation for customization options.
 
+## Validation
+
+Every pull request and push to `main` runs [`.github/workflows/validate.yml`](.github/workflows/validate.yml). It builds the site with `--strict_front_matter` and runs [HTML-Proofer](https://github.com/gjtorikian/html-proofer) on the output to catch broken internal links, images and scripts.
+
 ## Deployment
 
 The site is automatically deployed to GitHub Pages when changes are pushed to the main branch.

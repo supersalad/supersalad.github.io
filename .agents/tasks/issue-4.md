@@ -19,7 +19,7 @@ The English contact page shows the same phone number as the Swedish one: `+46 (0
 - [ ] `bundle exec jekyll build` succeeds and `_site/en/contact/index.html` contains `+46 (0)708 45 36 54`.
 
 ## Plan
-- [ ] In `en/contact.md`, replace `+46 (0)78 45 36 54` with `+46 (0)708 45 36 54`.
+- [x] In `en/contact.md`, replace `+46 (0)78 45 36 54` with `+46 (0)708 45 36 54`.
 - [ ] Run `bundle exec jekyll build` and check the generated English contact page shows the corrected number.
 
 ## Out of scope
@@ -32,3 +32,4 @@ state: in-progress   <!-- ready-for-dev | in-progress | in-review | approved | b
 ## Log
 - 2026-11-16 coordinator: task created
 - 2026-11-16 developer: started work
+- 2026-11-16 developer: corrected phone number in en/contact.md to +46 (0)708 45 36 54

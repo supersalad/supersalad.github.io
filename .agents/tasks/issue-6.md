@@ -24,7 +24,7 @@ Replace the private address `folkesson@gmail.com` with the official address `And
 - [x] Replace the email value in `_config.yml` (`author.email`), keeping the existing quoting
 - [x] Replace the email value in `_data/cv.json` (`basics.email`), keeping formatting
 - [x] Run `git grep -i 'folkesson@gmail' -- ':!.agents/tasks/'` and confirm no matches
-- [ ] Validate `_data/cv.json` parses as JSON
+- [x] Validate `_data/cv.json` parses as JSON
 - [ ] Run `bundle exec jekyll build` and confirm success
 
 ## Out of scope
@@ -41,3 +41,4 @@ state: in-progress   <!-- ready-for-dev | in-progress | in-review | approved | b
 - 2026-11-16 dev: replaced author.email in _config.yml
 - 2026-11-16 dev: replaced basics.email in _data/cv.json
 - 2026-11-16 dev: `git grep -i 'folkesson@gmail' -- ':!.agents/tasks/'` returns no matches
+- 2026-11-16 dev: strict JSON parse of _data/cv.json fails on both main and this branch (raw tab characters inside the `basics.summary` string, line 9); pre-existing and out of scope, not fixed. The file parses with a lenient parser, the new email value is read correctly, and Jekyll loads it fine

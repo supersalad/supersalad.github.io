@@ -33,7 +33,8 @@ Replace the private address `folkesson@gmail.com` with the official address `And
 - Any other content, formatting or files
 
 ## Status
-state: ready-for-dev   <!-- ready-for-dev | in-progress | in-review | approved | blocked -->
+state: in-progress   <!-- ready-for-dev | in-progress | in-review | approved | blocked -->
 
 ## Log
 - 2026-11-16 coordinator: task created
+- 2026-11-16 dev: started work

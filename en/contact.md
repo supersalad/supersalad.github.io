@@ -23,7 +23,7 @@ Or reach out via other channels...
 andreas@folkessontech.com
 
 ### Phone
-+46 (0)78 45 36 54
++46 (0)708 45 36 54
 
 ### LinkedIn
 [Andreas on LinkedIn](https://www.linkedin.com/in/folkesson-andreas/)

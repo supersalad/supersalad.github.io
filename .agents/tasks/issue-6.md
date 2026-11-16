@@ -21,7 +21,7 @@ Replace the private address `folkesson@gmail.com` with the official address `And
 - [ ] `bundle exec jekyll build` succeeds
 
 ## Plan
-- [ ] Replace the email value in `_config.yml` (`author.email`), keeping the existing quoting
+- [x] Replace the email value in `_config.yml` (`author.email`), keeping the existing quoting
 - [ ] Replace the email value in `_data/cv.json` (`basics.email`), keeping formatting
 - [ ] Run `git grep -i 'folkesson@gmail' -- ':!.agents/tasks/'` and confirm no matches
 - [ ] Validate `_data/cv.json` parses as JSON
@@ -38,3 +38,4 @@ state: in-progress   <!-- ready-for-dev | in-progress | in-review | approved | b
 ## Log
 - 2026-11-16 coordinator: task created
 - 2026-11-16 dev: started work
+- 2026-11-16 dev: replaced author.email in _config.yml

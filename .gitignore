@@ -1,5 +1,4 @@
 # Local Jekyll development
-Gemfile.lock
 .bundle/
 vendor/
 .jekyll-cache/

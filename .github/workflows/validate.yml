@@ -1,0 +1,38 @@
+name: Validate site
+
+on:
+  pull_request:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: validate-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  build:
+    name: Build and check
+    runs-on: ubuntu-latest
+    env:
+      JEKYLL_ENV: production
+      PAGES_REPO_NWO: ${{ github.repository }}
+      JEKYLL_GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: ruby/setup-ruby@v1
+        with:
+          ruby-version: "3.3"
+          bundler-cache: true
+
+      - name: Build (fails on invalid front matter)
+        run: bundle exec jekyll build --strict_front_matter --trace
+
+      - name: Check internal links, images and scripts
+        run: |
+          gem install html-proofer -v "~> 5.0" --no-document
+          htmlproofer _site --disable-external --no-enforce-https

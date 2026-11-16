@@ -33,7 +33,7 @@ Replace the private address `folkesson@gmail.com` with the official address `And
 - Any other content, formatting or files
 
 ## Status
-state: in-progress   <!-- ready-for-dev | in-progress | in-review | approved | blocked -->
+state: in-review   <!-- ready-for-dev | in-progress | in-review | approved | blocked -->
 
 ## Log
 - 2026-11-16 coordinator: task created
@@ -43,3 +43,4 @@ state: in-progress   <!-- ready-for-dev | in-progress | in-review | approved | b
 - 2026-11-16 dev: `git grep -i 'folkesson@gmail' -- ':!.agents/tasks/'` returns no matches
 - 2026-11-16 dev: strict JSON parse of _data/cv.json fails on both main and this branch (raw tab characters inside the `basics.summary` string, line 9); pre-existing and out of scope, not fixed. The file parses with a lenient parser, the new email value is read correctly, and Jekyll loads it fine
 - 2026-11-16 dev: `bundle exec jekyll build` succeeds; `_site/cv/index.html` shows the new address and `_site` has no occurrence of the old one
+- 2026-11-16 dev: opened PR #7, state in-review

@@ -27,7 +27,7 @@ The English contact page shows the same phone number as the Swedish one: `+46 (0
 - Do not add a `tel:` link or otherwise change the formatting/markup; the issue only requires matching the Swedish page, which has no `tel:` link.
 
 ## Status
-state: in-progress   <!-- ready-for-dev | in-progress | in-review | approved | blocked -->
+state: in-review   <!-- ready-for-dev | in-progress | in-review | approved | blocked -->
 
 ## Log
 - 2026-11-16 coordinator: task created
@@ -35,3 +35,4 @@ state: in-progress   <!-- ready-for-dev | in-progress | in-review | approved | b
 - 2026-11-16 developer: corrected phone number in en/contact.md to +46 (0)708 45 36 54
 - 2026-11-16 developer: bundle exec jekyll build succeeded; _site/en/contact/index.html contains +46 (0)708 45 36 54
 - 2026-11-16 developer: note: the grep criterion still matches this task file, which quotes the old number to describe the bug; no site file contains it
+- 2026-11-16 developer: opened PR #5, state in-review

@@ -7,7 +7,7 @@ issue + label `agent` ──► Coordinator ──push "coordinator:" commit─�
                                                                          ▲                                    │
                                                                          └──── comment starting with `/dev` ◄─┘ (changes requested)
                                                                                                               │
-                                                                               human merges ◄── "Validator: APPROVED"
+                                                                               human merges ◄── "Validator: APPROVED" + label `human-in-the-loop`
 ```
 
 | Agent | Trigger | Instructions |
@@ -50,7 +50,7 @@ Devin keeps `AGENT_GH_TOKEN` out of the shell unless a command binds it. In a pl
    ```
 
 - Use `git` for code and `/usr/bin/gh api` (REST) for every other GitHub action. Do not use `gh pr`/`gh issue` subcommands (blocked in Devin sessions) or Devin's built-in git/PR tools (they act as the Devin bot).
-- Never push to `main`, never merge, never force-push, never change repo settings or labels other than `agent`, `agent-review`, `agent-blocked`.
+- Never push to `main`, never merge, never force-push, never change repo settings or labels other than `agent`, `agent-review`, `agent-blocked`, `human-in-the-loop`.
 
 ## GitHub API cheat sheet
 
@@ -81,6 +81,7 @@ R=repos/supersalad/supersalad.github.io
 - `agent`: human adds to an issue to start the flow.
 - `agent-review`: Developer adds to the PR when ready; the Validator removes it when it starts.
 - `agent-blocked`: any agent adds when it needs a human; it explains why in a comment.
+- `human-in-the-loop`: the Validator adds to the PR when it approves, meaning the PR is ready for a human to merge. The Validator removes it when it starts a new review.
 
 ## Comment conventions
 

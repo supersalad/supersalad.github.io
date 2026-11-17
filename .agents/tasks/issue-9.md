@@ -31,7 +31,8 @@ On the Swedish Systemutveckling service page, replace the single AI-related bull
 - Any other wording, bullets, front matter or layout on the page
 
 ## Status
-state: ready-for-dev   <!-- ready-for-dev | in-progress | in-review | approved | blocked -->
+state: in-progress   <!-- ready-for-dev | in-progress | in-review | approved | blocked -->
 
 ## Log
 - 2026-11-17 coordinator: task created
+- 2026-11-17 dev: started

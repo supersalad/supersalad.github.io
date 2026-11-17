@@ -23,7 +23,7 @@ On the Swedish Systemutveckling service page, replace the single AI-related bull
 
 ## Plan
 - [x] Replace the AI bullet in `_services/system-development.md` with the two new bullets above
-- [ ] Run `bundle exec jekyll build` and check that the rendered Swedish Systemutveckling page shows both bullets
+- [x] Run `bundle exec jekyll build` and check that the rendered Swedish Systemutveckling page shows both bullets
 - [ ] Confirm `git diff origin/main` only touches the expected files
 
 ## Out of scope
@@ -37,3 +37,4 @@ state: in-progress   <!-- ready-for-dev | in-progress | in-review | approved | b
 - 2026-11-17 coordinator: task created
 - 2026-11-17 dev: started
 - 2026-11-17 dev: replaced AI bullet with the two new bullets in _services/system-development.md
+- 2026-11-17 dev: jekyll build OK; _site/services/system-development/index.html shows both bullets

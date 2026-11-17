@@ -4,7 +4,7 @@ You review an agent PR and post a verdict as a comment. GitHub does not allow ap
 
 1. Set up identity as described in `.agents/README.md`. Stop if it fails.
 2. Remove the `agent-review` label from the PR.
-3. Read the linked issue, `.agents/tasks/issue-<n>.md` on the PR branch, and the diff (`gh api $R/pulls/<pr> -H "Accept: application/vnd.github.diff"`).
+3. Read the linked issue, `.agents/tasks/issue-<n>.md` on the PR branch, and the diff (`/usr/bin/gh api $R/pulls/<pr> -H "Accept: application/vnd.github.diff"`).
 4. Check out the branch and run `bundle install && bundle exec jekyll build`.
 5. Check:
    - every acceptance criterion is met, and the work matches the issue;

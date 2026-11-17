@@ -21,7 +21,7 @@ Fix the missing article in the Swedish CV summary: "ett projekt eller produkt" b
 - [ ] `bundle exec jekyll build` succeeds
 
 ## Plan
-- [ ] In `_data/cv.json` `basics.summary`, replace `ett projekt eller produkt` with `ett projekt eller en produkt`
+- [x] In `_data/cv.json` `basics.summary`, replace `ett projekt eller produkt` with `ett projekt eller en produkt`
 - [ ] Validate the JSON and run `bundle exec jekyll build`
 - [ ] Confirm `git diff origin/main` only touches the expected files
 
@@ -35,3 +35,4 @@ state: in-progress   <!-- ready-for-dev | in-progress | in-review | approved | b
 ## Log
 - 2026-11-17 coordinator: task created; phrase found only in `_data/cv.json` `basics.summary`
 - 2026-11-17 dev: started work
+- 2026-11-17 dev: inserted "en" before "produkt" in `basics.summary`

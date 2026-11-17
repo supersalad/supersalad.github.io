@@ -29,7 +29,7 @@ Insert the missing space in the CV phrase "Infrastructure as Code(IaC)" so it re
 - Other occurrences of "Infrastructure as Code" that are already correctly spaced (e.g. line 47).
 
 ## Status
-state: in-progress   <!-- ready-for-dev | in-progress | in-review | approved | blocked -->
+state: in-review   <!-- ready-for-dev | in-progress | in-review | approved | blocked -->
 
 ## Log
 - 2026-11-17 coordinator: task created
@@ -38,3 +38,4 @@ state: in-progress   <!-- ready-for-dev | in-progress | in-review | approved | b
 - 2026-11-17 developer: grep finds no `Code(IaC)` outside `.agents/`; the only matches are in this task file, which quotes the old wording.
 - 2026-11-17 developer: the Ruby JSON check fails on `main` too (raw tab characters inside the `basics.summary` string, first at byte 2489). This is not caused by this change. Python `json.load(..., strict=False)` parses the file. Out of scope; not fixed.
 - 2026-11-17 developer: `bundle exec jekyll build` succeeds; `_site/cv/index.html` shows "Infrastructure as Code (IaC)".
+- 2026-11-17 developer: opened PR #19; state in-review

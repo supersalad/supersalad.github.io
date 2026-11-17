@@ -34,7 +34,8 @@ Make the online CV (and the site-wide author email) use exactly the address show
 - Any other content, formatting or files
 
 ## Status
-state: ready-for-dev   <!-- ready-for-dev | in-progress | in-review | approved | blocked -->
+state: in-progress   <!-- ready-for-dev | in-progress | in-review | approved | blocked -->
 
 ## Log
 - 2026-11-17 coordinator: task created
+- 2026-11-17 dev: started work

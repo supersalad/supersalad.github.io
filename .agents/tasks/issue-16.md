@@ -28,7 +28,7 @@ Merge the fragmented sentence in the Swedish CV summary ("Från kravanalys … e
 - Any English CV data or other files.
 
 ## Status
-state: in-progress   <!-- ready-for-dev | in-progress | in-review | approved | blocked -->
+state: in-review   <!-- ready-for-dev | in-progress | in-review | approved | blocked -->
 
 ## Log
 - 2026-11-17 coordinator: task created
@@ -36,3 +36,4 @@ state: in-progress   <!-- ready-for-dev | in-progress | in-review | approved | b
 - 2026-11-17 developer: replaced fragmented sentence in `_data/cv.json` basics.summary
 - 2026-11-17 developer: JSON check: `python3 -m json.tool` fails with "Invalid control character at line 9 column 2175" on this branch and identically on `main` (pre-existing literal tab before `**Moln-säkerhet` in `basics.summary`). Not caused by this change; fixing it is outside scope, flagged in the PR. Non-strict parse and Jekyll both succeed.
 - 2026-11-17 developer: `bundle exec jekyll build` succeeds; new sentence renders in `_site/cv/index.html`; acceptance criteria verified
+- 2026-11-17 developer: opened PR #23, state in-review

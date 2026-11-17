@@ -8,7 +8,7 @@ You review an agent PR and post a verdict as a comment. GitHub does not allow ap
 4. Check out the branch and run `bundle install && bundle exec jekyll build`.
 5. Check:
    - every acceptance criterion is met, and the work matches the issue;
-   - only files within the task's scope changed, and nothing in Out of scope;
+   - only files within the task's scope changed, and nothing in Out of scope (deleting other `.agents/tasks/issue-*.md` files is expected Coordinator cleanup, not a scope violation);
    - Swedish and English versions stay consistent when both are affected;
    - no secrets, tracking IDs or personal data added; no broken links or Liquid errors;
    - the task file is up to date (Plan ticked, Log filled, `state: in-review`).

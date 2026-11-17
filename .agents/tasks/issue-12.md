@@ -44,3 +44,4 @@ state: in-review   <!-- ready-for-dev | in-progress | in-review | approved | blo
 - 2026-11-17 dev: git grep for 'Andreas@folkessontech' outside .agents/ returns no matches
 - 2026-11-17 dev: bundle exec jekyll build succeeds; _site/cv/index.html shows andreas@folkessontech.com; all acceptance criteria verified
 - 2026-11-17 dev: opened PR #18, ready for review
+- 2026-11-17 dev: merged origin/main (agent-flow /usr/bin/gh fix, #14/#15 CV changes) into the branch; no conflicts; jekyll build succeeds; criteria still hold

@@ -23,7 +23,7 @@ Make the online CV (and the site-wide author email) use exactly the address show
 
 ## Plan
 - [x] In `_data/cv.json` (`basics.email`) change `Andreas@folkessontech.com` to `andreas@folkessontech.com`, keeping all other formatting byte-for-byte (do not reformat the file; it contains pre-existing raw tabs)
-- [ ] In `_config.yml` (`author.email`) make the same change, keeping the existing quoting
+- [x] In `_config.yml` (`author.email`) make the same change, keeping the existing quoting
 - [ ] Run `git grep -n 'Andreas@folkessontech' -- ':!.agents/'` and confirm no matches
 - [ ] Run `bundle exec jekyll build` and check the address in `_site/cv/index.html`
 
@@ -40,3 +40,4 @@ state: in-progress   <!-- ready-for-dev | in-progress | in-review | approved | b
 - 2026-11-17 coordinator: task created
 - 2026-11-17 dev: started work
 - 2026-11-17 dev: lowercased basics.email in _data/cv.json
+- 2026-11-17 dev: lowercased author.email in _config.yml

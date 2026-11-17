@@ -15,17 +15,17 @@ Make the online CV (and the site-wide author email) use exactly the address show
 - Language impact: both (shared config and CV data; no per-language copies of the address in CV data).
 
 ## Acceptance criteria
-- [ ] `_data/cv.json` has `"email": "andreas@folkessontech.com"` in `basics`
-- [ ] `_config.yml` has `author.email: "andreas@folkessontech.com"`
-- [ ] `git grep -n 'Andreas@folkessontech' -- ':!.agents/'` returns no matches (case-sensitive)
-- [ ] Diff only touches the email value on those two lines (plus this task file); no PDFs or other files changed
-- [ ] `bundle exec jekyll build` succeeds and `_site/cv/index.html` shows `andreas@folkessontech.com`
+- [x] `_data/cv.json` has `"email": "andreas@folkessontech.com"` in `basics`
+- [x] `_config.yml` has `author.email: "andreas@folkessontech.com"`
+- [x] `git grep -n 'Andreas@folkessontech' -- ':!.agents/'` returns no matches (case-sensitive)
+- [x] Diff only touches the email value on those two lines (plus this task file); no PDFs or other files changed
+- [x] `bundle exec jekyll build` succeeds and `_site/cv/index.html` shows `andreas@folkessontech.com`
 
 ## Plan
 - [x] In `_data/cv.json` (`basics.email`) change `Andreas@folkessontech.com` to `andreas@folkessontech.com`, keeping all other formatting byte-for-byte (do not reformat the file; it contains pre-existing raw tabs)
 - [x] In `_config.yml` (`author.email`) make the same change, keeping the existing quoting
 - [x] Run `git grep -n 'Andreas@folkessontech' -- ':!.agents/'` and confirm no matches
-- [ ] Run `bundle exec jekyll build` and check the address in `_site/cv/index.html`
+- [x] Run `bundle exec jekyll build` and check the address in `_site/cv/index.html`
 
 ## Out of scope
 - The PDF CVs in `assets/docs/` (already consistent) and `cv.md` download links
@@ -42,3 +42,4 @@ state: in-progress   <!-- ready-for-dev | in-progress | in-review | approved | b
 - 2026-11-17 dev: lowercased basics.email in _data/cv.json
 - 2026-11-17 dev: lowercased author.email in _config.yml
 - 2026-11-17 dev: git grep for 'Andreas@folkessontech' outside .agents/ returns no matches
+- 2026-11-17 dev: bundle exec jekyll build succeeds; _site/cv/index.html shows andreas@folkessontech.com; all acceptance criteria verified

@@ -7,7 +7,7 @@ lang: sv-SE
 timezone: Europe/Stockholm
 author:
   name: "Andreas Folkesson"
-  email: "Andreas@folkessontech.com"
+  email: "andreas@folkessontech.com"
   linkedin: "https://www.linkedin.com/in/andreas-folkesson-71a0538/"
 logo: /assets/images/headshot_circle.webp
 search: false # true, false (default)

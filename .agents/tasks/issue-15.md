@@ -25,7 +25,7 @@ Fix the misspelled platform name "EPiService" in the Draftit experience entry of
 - [ ] `bundle exec jekyll build` succeeds
 
 ## Plan
-- [ ] In `_data/cv.json`, replace `EPiService` with `EPiServer` in the Draftit highlight
+- [x] In `_data/cv.json`, replace `EPiService` with `EPiServer` in the Draftit highlight
 - [ ] Validate the JSON and run `bundle exec jekyll build`
 - [ ] Confirm `git diff origin/main` only touches the expected files
 
@@ -39,3 +39,4 @@ state: in-progress   <!-- ready-for-dev | in-progress | in-review | approved | b
 ## Log
 - 2026-11-17 coordinator: task created; verified intended term is EPiServer from the Draftit summary and git history (f885030)
 - 2026-11-17 dev: started work
+- 2026-11-17 dev: replaced EPiService with EPiServer in the Draftit highlight (_data/cv.json line 76)

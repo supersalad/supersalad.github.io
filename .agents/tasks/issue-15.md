@@ -34,7 +34,7 @@ Fix the misspelled platform name "EPiService" in the Draftit experience entry of
 - Other wording or casing in the CV (e.g. ".Net" vs ".NET", "Optimizely" naming)
 
 ## Status
-state: in-progress   <!-- ready-for-dev | in-progress | in-review | approved | blocked -->
+state: in-review   <!-- ready-for-dev | in-progress | in-review | approved | blocked -->
 
 ## Log
 - 2026-11-17 coordinator: task created; verified intended term is EPiServer from the Draftit summary and git history (f885030)
@@ -42,3 +42,4 @@ state: in-progress   <!-- ready-for-dev | in-progress | in-review | approved | b
 - 2026-11-17 dev: replaced EPiService with EPiServer in the Draftit highlight (_data/cv.json line 76)
 - 2026-11-17 dev: `bundle exec jekyll build` succeeds. The suggested strict check `ruby -rjson -e 'JSON.parse(...)'` fails on both `origin/main` and this branch: `_data/cv.json` already contains 5 raw tab characters inside `basics.summary`, and strict JSON does not allow them. This is not caused by the change. The file parses with `python3 json.loads(strict=False)` on both refs, and Jekyll loads it. The JSON criterion is left unticked; fixing the tabs is out of scope (no other text may change). Flagged in the PR.
 - 2026-11-17 dev: `git diff origin/main` touches only `_data/cv.json` (one line, EPiService -> EPiServer) and this task file. No `EPiService` found in the four PDF CVs in `assets/docs/` (raw search of decompressed streams; this is inconclusive if the PDFs use glyph-encoded text).
+- 2026-11-17 dev: opened PR #20; state in-review

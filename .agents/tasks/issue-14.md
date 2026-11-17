@@ -12,16 +12,16 @@ Insert the missing space in the CV phrase "Infrastructure as Code(IaC)" so it re
 - Language impact: Swedish CV page only. There is no English CV page in the site source.
 
 ## Acceptance criteria
-- [ ] `_data/cv.json` contains `Infrastructure as Code (IaC)` at the former occurrence.
+- [x] `_data/cv.json` contains `Infrastructure as Code (IaC)` at the former occurrence.
 - [ ] `grep -rn "Code(IaC)" --exclude-dir=_site --exclude-dir=.git .` returns no matches.
-- [ ] The diff changes exactly one line in `_data/cv.json` and only adds a single space before `(IaC)`.
+- [x] The diff changes exactly one line in `_data/cv.json` and only adds a single space before `(IaC)`.
 - [ ] `_data/cv.json` is still valid JSON (e.g. `ruby -rjson -e 'JSON.parse(File.read("_data/cv.json"))'`).
-- [ ] `bundle exec jekyll build` succeeds
+- [x] `bundle exec jekyll build` succeeds
 
 ## Plan
 - [x] In `_data/cv.json`, replace `Infrastructure as Code(IaC)` with `Infrastructure as Code (IaC)`.
 - [x] Run the grep and JSON check from the acceptance criteria.
-- [ ] Run `bundle exec jekyll build`.
+- [x] Run `bundle exec jekyll build`.
 
 ## Out of scope
 - Any other wording, punctuation or formatting in `_data/cv.json` or elsewhere.
@@ -37,3 +37,4 @@ state: in-progress   <!-- ready-for-dev | in-progress | in-review | approved | b
 - 2026-11-17 developer: added the missing space in `_data/cv.json`
 - 2026-11-17 developer: grep finds no `Code(IaC)` outside `.agents/`; the only matches are in this task file, which quotes the old wording.
 - 2026-11-17 developer: the Ruby JSON check fails on `main` too (raw tab characters inside the `basics.summary` string, first at byte 2489). This is not caused by this change. Python `json.load(..., strict=False)` parses the file. Out of scope; not fixed.
+- 2026-11-17 developer: `bundle exec jekyll build` succeeds; `_site/cv/index.html` shows "Infrastructure as Code (IaC)".

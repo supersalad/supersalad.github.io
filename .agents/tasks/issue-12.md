@@ -1,0 +1,40 @@
+# Issue #12: Use a consistent email address across the website and CV
+
+Issue: https://github.com/supersalad/supersalad.github.io/issues/12
+Branch: agent/12-consistent-email
+
+## Goal
+Make the online CV (and the site-wide author email) use exactly the address shown on the contact page, `andreas@folkessontech.com`.
+
+## Context
+- Contact pages show `andreas@folkessontech.com` (all lowercase): `contact.md` line 23, `en/contact.md` line 23. This is the reference value.
+- The online CV (`cv.md`, layout `cv` from the remote theme) renders `basics.email` from `_data/cv.json` line 6: `"email": "Andreas@folkessontech.com"` (capital `A`).
+- `_config.yml` line 10: `author.email: "Andreas@folkessontech.com"` (capital `A`), the site-wide author address used by the theme.
+- So the only inconsistency is the capitalisation of the local part (`Andreas@` vs `andreas@`).
+- Downloadable CVs `assets/docs/Andreas_Folkesson_CV_{sv,en}_{250821,260125}.pdf`: their decoded text already contains `andreas@folkessontech.com` only, so they already match and need no change (they are generated binaries, not editable source).
+- Language impact: both (shared config and CV data; no per-language copies of the address in CV data).
+
+## Acceptance criteria
+- [ ] `_data/cv.json` has `"email": "andreas@folkessontech.com"` in `basics`
+- [ ] `_config.yml` has `author.email: "andreas@folkessontech.com"`
+- [ ] `git grep -n 'Andreas@folkessontech' -- ':!.agents/'` returns no matches (case-sensitive)
+- [ ] Diff only touches the email value on those two lines (plus this task file); no PDFs or other files changed
+- [ ] `bundle exec jekyll build` succeeds and `_site/cv/index.html` shows `andreas@folkessontech.com`
+
+## Plan
+- [ ] In `_data/cv.json` (`basics.email`) change `Andreas@folkessontech.com` to `andreas@folkessontech.com`, keeping all other formatting byte-for-byte (do not reformat the file; it contains pre-existing raw tabs)
+- [ ] In `_config.yml` (`author.email`) make the same change, keeping the existing quoting
+- [ ] Run `git grep -n 'Andreas@folkessontech' -- ':!.agents/'` and confirm no matches
+- [ ] Run `bundle exec jekyll build` and check the address in `_site/cv/index.html`
+
+## Out of scope
+- The PDF CVs in `assets/docs/` (already consistent) and `cv.md` download links
+- Contact page text, phone numbers, LinkedIn links or any other contact details
+- Fixing the pre-existing raw tab characters in `_data/cv.json`
+- Any other content, formatting or files
+
+## Status
+state: ready-for-dev   <!-- ready-for-dev | in-progress | in-review | approved | blocked -->
+
+## Log
+- 2026-11-17 coordinator: task created

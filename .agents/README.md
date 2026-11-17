@@ -83,6 +83,7 @@ R=repos/supersalad/supersalad.github.io
 - `agent-review`: Developer adds to the PR when ready; the Validator removes it when it starts.
 - `agent-blocked`: any agent adds when it needs a human; it explains why in a comment.
 - `human-in-the-loop`: the Validator adds to the PR when it approves, meaning the PR is ready for a human to merge. The Validator removes it when it starts a new review.
+  - Every PR that is ready for merge must carry this label. In the flow the Validator sets it; any agent or session that opens a PR outside the flow (e.g. changes to `.agents/`) sets it once the PR is ready (pushed, build passing). Only label PRs that are actually ready, and remove it if you push more changes that still need review.
 
 ## Comment conventions
 

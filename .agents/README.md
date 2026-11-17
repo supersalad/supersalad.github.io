@@ -19,15 +19,35 @@ issue + label `agent` ──► Coordinator ──push "coordinator:" commit─�
 ## Identity (all agents)
 
 Every agent acts as `folkessontechagent` (token in the `AGENT_GH_TOKEN` secret), never as `supersalad` and never as the Devin bot.
-Run this first in every session:
 
-```bash
-export GH_TOKEN="$AGENT_GH_TOKEN"
-git config --global user.name  "folkessontechagent"
-git config --global user.email "356563664+folkessontechagent@users.noreply.github.com"
-git remote set-url origin "https://x-access-token:${AGENT_GH_TOKEN}@github.com/supersalad/supersalad.github.io.git"
-gh api user --jq .login   # must print folkessontechagent; stop otherwise
-```
+Devin keeps `AGENT_GH_TOKEN` out of the shell unless a command binds it. In a plain shell `$AGENT_GH_TOKEN` is empty, and `gh` then silently uses the Devin bot's login. Do this first in every session:
+
+1. Start one persistent shell and bind these in the exec tool's `env` when you start it (`env` only applies when a shell starts):
+
+   ```json
+   {
+     "AGENT_GH_TOKEN": "secret:org:AGENT_GH_TOKEN",
+     "GH_TOKEN": "secret:org:AGENT_GH_TOKEN",
+     "GIT_AUTHOR_NAME": "folkessontechagent",
+     "GIT_AUTHOR_EMAIL": "356563664+folkessontechagent@users.noreply.github.com",
+     "GIT_COMMITTER_NAME": "folkessontechagent",
+     "GIT_COMMITTER_EMAIL": "356563664+folkessontechagent@users.noreply.github.com"
+   }
+   ```
+
+2. Run every `git` and `gh` command for this repo in that shell (reuse its `shell_id`). Any other shell acts as the Devin bot. Do not run `git config`; the `GIT_*` variables set the commit identity.
+3. Check the identity in that shell:
+
+   ```bash
+   gh api user --jq .login   # must print folkessontechagent
+   ```
+
+   If it prints anything else or fails, stop and report why. Do not work around it with `curl`, another token, or Devin's built-in tools.
+4. Push with the token URL, not `origin` (which uses the Devin app's credentials):
+
+   ```bash
+   git push "https://x-access-token:${AGENT_GH_TOKEN}@github.com/supersalad/supersalad.github.io.git" HEAD:<branch>
+   ```
 
 - Use `git` for code and `gh api` (REST) for every other GitHub action. Do not use `gh pr`/`gh issue` subcommands (blocked in Devin sessions) or Devin's built-in git/PR tools (they act as the Devin bot).
 - Never push to `main`, never merge, never force-push, never change repo settings or labels other than `agent`, `agent-review`, `agent-blocked`.

@@ -17,17 +17,17 @@ Fix the misspelled platform name "EPiService" in the Draftit experience entry of
 - Language impact: Swedish CV data only. No English counterpart exists in the repo source.
 
 ## Acceptance criteria
-- [ ] `_data/cv.json` contains no occurrence of `EPiService`
-- [ ] The Draftit highlight reads exactly `"Vidareutveckling och nyutveckling på legacy plattform (EPiServer, C# .Net Framework, MS SQL Server)"`
-- [ ] No other text in `_data/cv.json` changes (the diff is a one-word change on that line)
+- [x] `_data/cv.json` contains no occurrence of `EPiService`
+- [x] The Draftit highlight reads exactly `"Vidareutveckling och nyutveckling på legacy plattform (EPiServer, C# .Net Framework, MS SQL Server)"`
+- [x] No other text in `_data/cv.json` changes (the diff is a one-word change on that line)
 - [ ] `_data/cv.json` is still valid JSON (e.g. `ruby -rjson -e 'JSON.parse(File.read("_data/cv.json"))'`)
-- [ ] The diff touches no file other than `_data/cv.json` and this task file
+- [x] The diff touches no file other than `_data/cv.json` and this task file
 - [x] `bundle exec jekyll build` succeeds
 
 ## Plan
 - [x] In `_data/cv.json`, replace `EPiService` with `EPiServer` in the Draftit highlight
 - [x] Validate the JSON and run `bundle exec jekyll build`
-- [ ] Confirm `git diff origin/main` only touches the expected files
+- [x] Confirm `git diff origin/main` only touches the expected files
 
 ## Out of scope
 - The PDF CVs in `assets/docs/` (binary files; cannot be edited here, flag in the PR if they contain the typo)
@@ -41,3 +41,4 @@ state: in-progress   <!-- ready-for-dev | in-progress | in-review | approved | b
 - 2026-11-17 dev: started work
 - 2026-11-17 dev: replaced EPiService with EPiServer in the Draftit highlight (_data/cv.json line 76)
 - 2026-11-17 dev: `bundle exec jekyll build` succeeds. The suggested strict check `ruby -rjson -e 'JSON.parse(...)'` fails on both `origin/main` and this branch: `_data/cv.json` already contains 5 raw tab characters inside `basics.summary`, and strict JSON does not allow them. This is not caused by the change. The file parses with `python3 json.loads(strict=False)` on both refs, and Jekyll loads it. The JSON criterion is left unticked; fixing the tabs is out of scope (no other text may change). Flagged in the PR.
+- 2026-11-17 dev: `git diff origin/main` touches only `_data/cv.json` (one line, EPiService -> EPiServer) and this task file. No `EPiService` found in the four PDF CVs in `assets/docs/` (raw search of decompressed streams; this is inconclusive if the PDFs use glyph-encoded text).

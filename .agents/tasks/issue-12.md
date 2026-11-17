@@ -34,7 +34,7 @@ Make the online CV (and the site-wide author email) use exactly the address show
 - Any other content, formatting or files
 
 ## Status
-state: in-progress   <!-- ready-for-dev | in-progress | in-review | approved | blocked -->
+state: in-review   <!-- ready-for-dev | in-progress | in-review | approved | blocked -->
 
 ## Log
 - 2026-11-17 coordinator: task created
@@ -43,3 +43,4 @@ state: in-progress   <!-- ready-for-dev | in-progress | in-review | approved | b
 - 2026-11-17 dev: lowercased author.email in _config.yml
 - 2026-11-17 dev: git grep for 'Andreas@folkessontech' outside .agents/ returns no matches
 - 2026-11-17 dev: bundle exec jekyll build succeeds; _site/cv/index.html shows andreas@folkessontech.com; all acceptance criteria verified
+- 2026-11-17 dev: opened PR #18, ready for review

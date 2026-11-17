@@ -31,7 +31,8 @@ En väl anpassad arkitektur, synliggjord och hanterad teknisk skuld och automati
 
 #### Mammas gata:
 * .NET / C#
-* AI-stödd utveckling (GitHub Copilot, Cursor, Windsurf, Devin, CodeRabbit mm)
+* AI-stödd utveckling (GitHub Copilot, Cursor, Devin, CodeRabbit m.m.)
+* Agentdriven utveckling (AI-agenter, autonoma arbetsflöden och orkestrering)
 * Azure (App Services, Functions, Storage, DevOps m.m.)
 * CI/CD och automatiserad testning
 * Systemarkitektur och teknisk design

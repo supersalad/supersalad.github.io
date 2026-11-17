@@ -14,16 +14,16 @@ Fix the missing article in the Swedish CV summary: "ett projekt eller produkt" b
 - `_data/cv.json` already contains raw tab characters in `basics.summary`, so strict JSON parsers (e.g. Ruby `JSON.parse`) fail on `origin/main` too. Validate with `python3 -c 'import json;json.loads(open("_data/cv.json").read(),strict=False)'`; do not touch the tabs.
 
 ## Acceptance criteria
-- [ ] `_data/cv.json` contains `med ett projekt eller en produkt.` and no occurrence of `ett projekt eller produkt`
-- [ ] The diff to `_data/cv.json` is a single-line change that only inserts `en ` before `produkt` in that sentence
-- [ ] `_data/cv.json` still parses (`python3 -c 'import json;json.loads(open("_data/cv.json").read(),strict=False)'`)
-- [ ] The diff touches no file other than `_data/cv.json` and this task file
-- [ ] `bundle exec jekyll build` succeeds
+- [x] `_data/cv.json` contains `med ett projekt eller en produkt.` and no occurrence of `ett projekt eller produkt`
+- [x] The diff to `_data/cv.json` is a single-line change that only inserts `en ` before `produkt` in that sentence
+- [x] `_data/cv.json` still parses (`python3 -c 'import json;json.loads(open("_data/cv.json").read(),strict=False)'`)
+- [x] The diff touches no file other than `_data/cv.json` and this task file
+- [x] `bundle exec jekyll build` succeeds
 
 ## Plan
 - [x] In `_data/cv.json` `basics.summary`, replace `ett projekt eller produkt` with `ett projekt eller en produkt`
-- [ ] Validate the JSON and run `bundle exec jekyll build`
-- [ ] Confirm `git diff origin/main` only touches the expected files
+- [x] Validate the JSON and run `bundle exec jekyll build`
+- [x] Confirm `git diff origin/main` only touches the expected files
 
 ## Out of scope
 - The PDF CVs in `assets/docs/` (binary; flag in the PR if they contain the phrase)
@@ -36,3 +36,5 @@ state: in-progress   <!-- ready-for-dev | in-progress | in-review | approved | b
 - 2026-11-17 coordinator: task created; phrase found only in `_data/cv.json` `basics.summary`
 - 2026-11-17 dev: started work
 - 2026-11-17 dev: inserted "en" before "produkt" in `basics.summary`
+- 2026-11-17 dev: JSON parses (strict=False), `bundle exec jekyll build` succeeds; diff vs origin/main touches only `_data/cv.json` (one line, `+en`) and this task file
+- 2026-11-17 dev: PDF CVs in `assets/docs/` (out of scope) use encoded text, so the phrase could not be checked there; flagged in the PR

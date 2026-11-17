@@ -21,7 +21,7 @@ The "read more" links under the service entries on the English homepage (`/en/`)
 - [ ] `bundle exec jekyll build` succeeds
 
 ## Plan
-- [ ] Add an English label, e.g. `read_more_en: "Read more"` under `t:` in `_data/theme.yml` (or an equivalent minimal mechanism).
+- [x] Add an English label, e.g. `read_more_en: "Read more"` under `t:` in `_data/theme.yml` (or an equivalent minimal mechanism).
 - [ ] In `_includes/entry.html`, choose the label by language: use the English label when `page.lang == 'en'`, otherwise keep `site.data.theme.t.read_more | default: 'Read More'`.
 - [ ] Run `bundle exec jekyll build` and check `_site/en/index.html` and `_site/index.html` against the acceptance criteria.
 
@@ -36,3 +36,4 @@ state: in-progress   <!-- ready-for-dev | in-progress | in-review | approved | b
 ## Log
 - 2026-11-17 coordinator: task created
 - 2026-11-17 dev: started
+- 2026-11-17 dev: added `read_more_en: "Read more"` to `_data/theme.yml`

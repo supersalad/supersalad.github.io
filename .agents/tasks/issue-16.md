@@ -20,7 +20,7 @@ Merge the fragmented sentence in the Swedish CV summary ("Från kravanalys … e
 
 ## Plan
 - [x] In `_data/cv.json` `basics.summary`, replace the sentence with the wording from the acceptance criteria, keeping surrounding text, spacing and markdown line breaks unchanged.
-- [ ] Validate JSON (e.g. `python3 -m json.tool _data/cv.json > /dev/null`).
+- [x] Validate JSON (e.g. `python3 -m json.tool _data/cv.json > /dev/null`).
 - [ ] Run `bundle exec jekyll build`.
 
 ## Out of scope
@@ -34,3 +34,4 @@ state: in-progress   <!-- ready-for-dev | in-progress | in-review | approved | b
 - 2026-11-17 coordinator: task created
 - 2026-11-17 developer: started work
 - 2026-11-17 developer: replaced fragmented sentence in `_data/cv.json` basics.summary
+- 2026-11-17 developer: JSON check: `python3 -m json.tool` fails with "Invalid control character at line 9 column 2175" on this branch and identically on `main` (pre-existing literal tab before `**Moln-säkerhet` in `basics.summary`). Not caused by this change; fixing it is outside scope, flagged in the PR. Non-strict parse and Jekyll both succeed.

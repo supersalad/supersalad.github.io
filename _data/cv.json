@@ -71,7 +71,7 @@
       "website": "https://draftit.se/",
       "startDate": "2017",
       "endDate": "2022",
-      "summary": "Underhåll och vidareutveckling av befintliga produkter i EPiServer (Optimizely) samt nyutveckling av nya produkter i .NET Core och React. Produkter för LegalTech, som informationsprodukter och olika processverktyg inom regelefterlevnad. Migrering av äldre system till modern arkitektur med containeriserade tjänster i Azure. Implementation av Continuous Delivery, testautomatisering och Infrastructure as Code(IaC).",
+      "summary": "Underhåll och vidareutveckling av befintliga produkter i EPiServer (Optimizely) samt nyutveckling av nya produkter i .NET Core och React. Produkter för LegalTech, som informationsprodukter och olika processverktyg inom regelefterlevnad. Migrering av äldre system till modern arkitektur med containeriserade tjänster i Azure. Implementation av Continuous Delivery, testautomatisering och Infrastructure as Code (IaC).",
       "highlights": [
         "Vidareutveckling och nyutveckling på legacy plattform (EPiServer, C# .Net Framework, MS SQL Server)",
         "Nyutveckling och migrering av funktionalitet till ny plattform (C# .Net Core, React, Docker, RabbitMQ, MongoDB, Azure)",

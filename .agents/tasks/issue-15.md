@@ -34,7 +34,8 @@ Fix the misspelled platform name "EPiService" in the Draftit experience entry of
 - Other wording or casing in the CV (e.g. ".Net" vs ".NET", "Optimizely" naming)
 
 ## Status
-state: ready-for-dev   <!-- ready-for-dev | in-progress | in-review | approved | blocked -->
+state: in-progress   <!-- ready-for-dev | in-progress | in-review | approved | blocked -->
 
 ## Log
 - 2026-11-17 coordinator: task created; verified intended term is EPiServer from the Draftit summary and git history (f885030)
+- 2026-11-17 dev: started work

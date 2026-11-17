@@ -28,7 +28,8 @@ Merge the fragmented sentence in the Swedish CV summary ("Från kravanalys … e
 - Any English CV data or other files.
 
 ## Status
-state: ready-for-dev   <!-- ready-for-dev | in-progress | in-review | approved | blocked -->
+state: in-progress   <!-- ready-for-dev | in-progress | in-review | approved | blocked -->
 
 ## Log
 - 2026-11-17 coordinator: task created
+- 2026-11-17 developer: started work

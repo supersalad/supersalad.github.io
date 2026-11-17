@@ -19,7 +19,7 @@ Insert the missing space in the CV phrase "Infrastructure as Code(IaC)" so it re
 - [ ] `bundle exec jekyll build` succeeds
 
 ## Plan
-- [ ] In `_data/cv.json`, replace `Infrastructure as Code(IaC)` with `Infrastructure as Code (IaC)`.
+- [x] In `_data/cv.json`, replace `Infrastructure as Code(IaC)` with `Infrastructure as Code (IaC)`.
 - [ ] Run the grep and JSON check from the acceptance criteria.
 - [ ] Run `bundle exec jekyll build`.
 
@@ -34,3 +34,4 @@ state: in-progress   <!-- ready-for-dev | in-progress | in-review | approved | b
 ## Log
 - 2026-11-17 coordinator: task created
 - 2026-11-17 developer: started work
+- 2026-11-17 developer: added the missing space in `_data/cv.json`

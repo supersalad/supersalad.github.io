@@ -22,11 +22,11 @@ Fix the misspelled platform name "EPiService" in the Draftit experience entry of
 - [ ] No other text in `_data/cv.json` changes (the diff is a one-word change on that line)
 - [ ] `_data/cv.json` is still valid JSON (e.g. `ruby -rjson -e 'JSON.parse(File.read("_data/cv.json"))'`)
 - [ ] The diff touches no file other than `_data/cv.json` and this task file
-- [ ] `bundle exec jekyll build` succeeds
+- [x] `bundle exec jekyll build` succeeds
 
 ## Plan
 - [x] In `_data/cv.json`, replace `EPiService` with `EPiServer` in the Draftit highlight
-- [ ] Validate the JSON and run `bundle exec jekyll build`
+- [x] Validate the JSON and run `bundle exec jekyll build`
 - [ ] Confirm `git diff origin/main` only touches the expected files
 
 ## Out of scope
@@ -40,3 +40,4 @@ state: in-progress   <!-- ready-for-dev | in-progress | in-review | approved | b
 - 2026-11-17 coordinator: task created; verified intended term is EPiServer from the Draftit summary and git history (f885030)
 - 2026-11-17 dev: started work
 - 2026-11-17 dev: replaced EPiService with EPiServer in the Draftit highlight (_data/cv.json line 76)
+- 2026-11-17 dev: `bundle exec jekyll build` succeeds. The suggested strict check `ruby -rjson -e 'JSON.parse(...)'` fails on both `origin/main` and this branch: `_data/cv.json` already contains 5 raw tab characters inside `basics.summary`, and strict JSON does not allow them. This is not caused by the change. The file parses with `python3 json.loads(strict=False)` on both refs, and Jekyll loads it. The JSON criterion is left unticked; fixing the tabs is out of scope (no other text may change). Flagged in the PR.

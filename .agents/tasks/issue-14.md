@@ -29,7 +29,8 @@ Insert the missing space in the CV phrase "Infrastructure as Code(IaC)" so it re
 - Other occurrences of "Infrastructure as Code" that are already correctly spaced (e.g. line 47).
 
 ## Status
-state: ready-for-dev   <!-- ready-for-dev | in-progress | in-review | approved | blocked -->
+state: in-progress   <!-- ready-for-dev | in-progress | in-review | approved | blocked -->
 
 ## Log
 - 2026-11-17 coordinator: task created
+- 2026-11-17 developer: started work

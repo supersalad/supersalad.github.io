@@ -14,16 +14,16 @@ The "read more" links under the service entries on the English homepage (`/en/`)
 - Language impact: English only. Swedish output must not change.
 
 ## Acceptance criteria
-- [ ] `_site/en/index.html` contains no "Läs mer" and shows "Read more" for every `more-link`.
-- [ ] `_site/index.html` (Swedish homepage) still shows "Läs mer" for its `more-link`s.
-- [ ] The `href` of each `more-link` and the arrow icon markup are unchanged (only the label text differs).
-- [ ] `_data/theme.yml` `read_more` remains "Läs mer".
-- [ ] `bundle exec jekyll build` succeeds
+- [x] `_site/en/index.html` contains no "Läs mer" and shows "Read more" for every `more-link`.
+- [x] `_site/index.html` (Swedish homepage) still shows "Läs mer" for its `more-link`s.
+- [x] The `href` of each `more-link` and the arrow icon markup are unchanged (only the label text differs).
+- [x] `_data/theme.yml` `read_more` remains "Läs mer".
+- [x] `bundle exec jekyll build` succeeds
 
 ## Plan
 - [x] Add an English label, e.g. `read_more_en: "Read more"` under `t:` in `_data/theme.yml` (or an equivalent minimal mechanism).
 - [x] In `_includes/entry.html`, choose the label by language: use the English label when `page.lang == 'en'`, otherwise keep `site.data.theme.t.read_more | default: 'Read More'`.
-- [ ] Run `bundle exec jekyll build` and check `_site/en/index.html` and `_site/index.html` against the acceptance criteria.
+- [x] Run `bundle exec jekyll build` and check `_site/en/index.html` and `_site/index.html` against the acceptance criteria.
 
 ## Out of scope
 - Swedish text anywhere, including "Läs mer" inside Swedish blog posts in `_posts/`.
@@ -38,3 +38,4 @@ state: in-progress   <!-- ready-for-dev | in-progress | in-review | approved | b
 - 2026-11-17 dev: started
 - 2026-11-17 dev: added `read_more_en: "Read more"` to `_data/theme.yml`
 - 2026-11-17 dev: `_includes/entry.html` uses `read_more_en` when `page.lang == 'en'`
+- 2026-11-17 dev: build OK; compared with a baseline build of the branch head: only the 3 `more-link` labels on `/en/` (and `/en/services/`, also `lang: en`) changed; Swedish pages unchanged apart from build timestamps

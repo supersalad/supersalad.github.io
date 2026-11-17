@@ -31,7 +31,7 @@ On the Swedish Systemutveckling service page, replace the single AI-related bull
 - Any other wording, bullets, front matter or layout on the page
 
 ## Status
-state: in-progress   <!-- ready-for-dev | in-progress | in-review | approved | blocked -->
+state: in-review   <!-- ready-for-dev | in-progress | in-review | approved | blocked -->
 
 ## Log
 - 2026-11-17 coordinator: task created
@@ -39,3 +39,4 @@ state: in-progress   <!-- ready-for-dev | in-progress | in-review | approved | b
 - 2026-11-17 dev: replaced AI bullet with the two new bullets in _services/system-development.md
 - 2026-11-17 dev: jekyll build OK; _site/services/system-development/index.html shows both bullets
 - 2026-11-17 dev: diff vs origin/main touches only _services/system-development.md and this task file; all acceptance criteria verified
+- 2026-11-17 dev: opened PR #10, state in-review

@@ -19,7 +19,7 @@ Merge the fragmented sentence in the Swedish CV summary ("Från kravanalys … e
 - [ ] `bundle exec jekyll build` succeeds
 
 ## Plan
-- [ ] In `_data/cv.json` `basics.summary`, replace the sentence with the wording from the acceptance criteria, keeping surrounding text, spacing and markdown line breaks unchanged.
+- [x] In `_data/cv.json` `basics.summary`, replace the sentence with the wording from the acceptance criteria, keeping surrounding text, spacing and markdown line breaks unchanged.
 - [ ] Validate JSON (e.g. `python3 -m json.tool _data/cv.json > /dev/null`).
 - [ ] Run `bundle exec jekyll build`.
 
@@ -33,3 +33,4 @@ state: in-progress   <!-- ready-for-dev | in-progress | in-review | approved | b
 ## Log
 - 2026-11-17 coordinator: task created
 - 2026-11-17 developer: started work
+- 2026-11-17 developer: replaced fragmented sentence in `_data/cv.json` basics.summary

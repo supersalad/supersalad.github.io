@@ -30,7 +30,7 @@ Fix the missing article in the Swedish CV summary: "ett projekt eller produkt" b
 - Any other wording, whitespace or tab characters in `_data/cv.json`
 
 ## Status
-state: in-progress   <!-- ready-for-dev | in-progress | in-review | approved | blocked -->
+state: in-review   <!-- ready-for-dev | in-progress | in-review | approved | blocked -->
 
 ## Log
 - 2026-11-17 coordinator: task created; phrase found only in `_data/cv.json` `basics.summary`
@@ -38,3 +38,4 @@ state: in-progress   <!-- ready-for-dev | in-progress | in-review | approved | b
 - 2026-11-17 dev: inserted "en" before "produkt" in `basics.summary`
 - 2026-11-17 dev: JSON parses (strict=False), `bundle exec jekyll build` succeeds; diff vs origin/main touches only `_data/cv.json` (one line, `+en`) and this task file
 - 2026-11-17 dev: PDF CVs in `assets/docs/` (out of scope) use encoded text, so the phrase could not be checked there; flagged in the PR
+- 2026-11-17 dev: opened PR #24

@@ -30,7 +30,8 @@ Fix the missing article in the Swedish CV summary: "ett projekt eller produkt" b
 - Any other wording, whitespace or tab characters in `_data/cv.json`
 
 ## Status
-state: ready-for-dev   <!-- ready-for-dev | in-progress | in-review | approved | blocked -->
+state: in-progress   <!-- ready-for-dev | in-progress | in-review | approved | blocked -->
 
 ## Log
 - 2026-11-17 coordinator: task created; phrase found only in `_data/cv.json` `basics.summary`
+- 2026-11-17 dev: started work

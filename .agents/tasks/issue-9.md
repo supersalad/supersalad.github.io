@@ -13,18 +13,18 @@ On the Swedish Systemutveckling service page, replace the single AI-related bull
 - The issue text says "proposed content change only, do not edit the website". The owner labeled it `agent`, and nothing is published until a human merges the PR, so the PR is the proposal.
 
 ## Acceptance criteria
-- [ ] In `_services/system-development.md`, the line `* AI-stödd utveckling (GitHub Copilot, Cursor, Windsurf, Devin, CodeRabbit mm)` is gone
-- [ ] In its place, in this order, are exactly these two lines:
+- [x] In `_services/system-development.md`, the line `* AI-stödd utveckling (GitHub Copilot, Cursor, Windsurf, Devin, CodeRabbit mm)` is gone
+- [x] In its place, in this order, are exactly these two lines:
       `* AI-stödd utveckling (GitHub Copilot, Cursor, Devin, CodeRabbit m.m.)`
       `* Agentdriven utveckling (AI-agenter, autonoma arbetsflöden och orkestrering)`
-- [ ] All other bullets in the "Mammas gata" list are unchanged and keep their order
-- [ ] The diff touches no file other than `_services/system-development.md` and this task file (in particular not `_en_services/system-development.md`)
-- [ ] `bundle exec jekyll build` succeeds
+- [x] All other bullets in the "Mammas gata" list are unchanged and keep their order
+- [x] The diff touches no file other than `_services/system-development.md` and this task file (in particular not `_en_services/system-development.md`)
+- [x] `bundle exec jekyll build` succeeds
 
 ## Plan
 - [x] Replace the AI bullet in `_services/system-development.md` with the two new bullets above
 - [x] Run `bundle exec jekyll build` and check that the rendered Swedish Systemutveckling page shows both bullets
-- [ ] Confirm `git diff origin/main` only touches the expected files
+- [x] Confirm `git diff origin/main` only touches the expected files
 
 ## Out of scope
 - English pages (`_en_services/`, `en/`)
@@ -38,3 +38,4 @@ state: in-progress   <!-- ready-for-dev | in-progress | in-review | approved | b
 - 2026-11-17 dev: started
 - 2026-11-17 dev: replaced AI bullet with the two new bullets in _services/system-development.md
 - 2026-11-17 dev: jekyll build OK; _site/services/system-development/index.html shows both bullets
+- 2026-11-17 dev: diff vs origin/main touches only _services/system-development.md and this task file; all acceptance criteria verified

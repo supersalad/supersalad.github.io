@@ -31,7 +31,7 @@ The "read more" links under the service entries on the English homepage (`/en/`)
 - Translating other Swedish theme strings on English pages (separate issue if needed).
 
 ## Status
-state: in-progress   <!-- ready-for-dev | in-progress | in-review | approved | blocked -->
+state: in-review   <!-- ready-for-dev | in-progress | in-review | approved | blocked -->
 
 ## Log
 - 2026-11-17 coordinator: task created
@@ -39,3 +39,4 @@ state: in-progress   <!-- ready-for-dev | in-progress | in-review | approved | b
 - 2026-11-17 dev: added `read_more_en: "Read more"` to `_data/theme.yml`
 - 2026-11-17 dev: `_includes/entry.html` uses `read_more_en` when `page.lang == 'en'`
 - 2026-11-17 dev: build OK; compared with a baseline build of the branch head: only the 3 `more-link` labels on `/en/` (and `/en/services/`, also `lang: en`) changed; Swedish pages unchanged apart from build timestamps
+- 2026-11-17 dev: opened PR #22

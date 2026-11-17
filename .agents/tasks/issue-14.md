@@ -20,7 +20,7 @@ Insert the missing space in the CV phrase "Infrastructure as Code(IaC)" so it re
 
 ## Plan
 - [x] In `_data/cv.json`, replace `Infrastructure as Code(IaC)` with `Infrastructure as Code (IaC)`.
-- [ ] Run the grep and JSON check from the acceptance criteria.
+- [x] Run the grep and JSON check from the acceptance criteria.
 - [ ] Run `bundle exec jekyll build`.
 
 ## Out of scope
@@ -35,3 +35,5 @@ state: in-progress   <!-- ready-for-dev | in-progress | in-review | approved | b
 - 2026-11-17 coordinator: task created
 - 2026-11-17 developer: started work
 - 2026-11-17 developer: added the missing space in `_data/cv.json`
+- 2026-11-17 developer: grep finds no `Code(IaC)` outside `.agents/`; the only matches are in this task file, which quotes the old wording.
+- 2026-11-17 developer: the Ruby JSON check fails on `main` too (raw tab characters inside the `basics.summary` string, first at byte 2489). This is not caused by this change. Python `json.load(..., strict=False)` parses the file. Out of scope; not fixed.

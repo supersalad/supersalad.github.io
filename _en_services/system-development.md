@@ -6,12 +6,6 @@ image:
   path: /assets/images/systemdeveloper_banner.webp
   thumbnail: /assets/images/systemdeveloper_400x200.webp
   caption: Photo by <a href="https://unsplash.com/@brookecagle?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Brooke Cagle</a> on <a href="https://unsplash.com/photos/a-group-of-friends-at-a-coffee-shop--uHVRvDr7pg?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Unsplash</a>
-
-form-calltoaction: Strenghen your team with an experienced developer
-form-thankyou: Thanks for reaching out!<br>I'll get back to you as soon as possible
-form-header: Fill in to get contacted
-form-intro: Initial consultations are always free of charge.
-
 ---
 
 # Legacy, new development and everything in between
@@ -51,4 +45,4 @@ A well-adapted architecture, visible and managed technical debt, and automation 
 * Kubernetes
 * And much more (read more in my [CV](/assets/docs/Andreas_Folkesson_CV_en_250821.pdf))
 
-{% include contact-form.html %}
+<p><a href="/en/contact/" class="btn btn-primary">Strengthen your team with an experienced developer</a></p>

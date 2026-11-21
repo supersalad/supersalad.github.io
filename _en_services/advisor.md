@@ -6,12 +6,6 @@ image:
   path: /assets/images/agile_banner.webp
   thumbnail: /assets/images/agile_400x200.webp
   caption: Photo by <a href="https://unsplash.com/@brookecagle?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Brooke Cagle</a> on <a href="https://unsplash.com/photos/a-group-of-friends-at-a-coffee-shop--uHVRvDr7pg?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Unsplash</a>
-
-form-calltoaction: Get in touch and let's have an initial conversation
-form-thankyou: Thanks for reaching out!<br>I'll get back to you as soon as possible
-form-header: Fill in to get contacted
-form-intro: Initial consultations are always free of charge.
-
 ---
 
 It takes more than good ideas, technology, and skilled individuals to build long-term success. 
@@ -34,4 +28,4 @@ As an advisor and coach, I help you see what is actually happening in everyday w
 
 We start with a current state analysis: a few conversations, an overview of architecture, tech stack, and how the team works. This leads to a summary of insights and recommendations linked to your goals.
 
-{% include contact-form.html %}
+<p><a href="/en/contact/" class="btn btn-primary">Get in touch and let's have an initial conversation</a></p>

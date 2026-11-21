@@ -5,12 +5,6 @@ image:
   path: /assets/images/agile_banner.webp
   thumbnail: /assets/images/agile_400x200.webp
   caption: Photo by <a href="https://unsplash.com/@brookecagle?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Brooke Cagle</a> on <a href="https://unsplash.com/photos/a-group-of-friends-at-a-coffee-shop--uHVRvDr7pg?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Unsplash</a>
-
-form-calltoaction: Jag vill bli kontaktad
-form-thankyou: Tack för din kontakt!<br>Jag återkommer så snart som möjligt.
-form-header: Fyll i för att bli kontaktad
-form-intro: Inledande samtal är alltid kostnadsfria.
-
 ---
 
 Det krävs mer än bra idéer, teknik och kunniga individer för att bygga långsiktig framgång. 
@@ -33,4 +27,4 @@ Som rådgivare och coach hjälper jag er att få syn på vad som faktiskt sker i
 
 Vi börjar med en nulägesanalys: några samtal, en översikt av arkitektur, teknikstack och hur teamet arbetar. Detta leder till en sammanställning av insikter och rekommendationer kopplat till era mål.
 
-{% include contact-form.html %}
+<p><a href="/contact/" class="btn btn-primary">Jag vill bli kontaktad</a></p>

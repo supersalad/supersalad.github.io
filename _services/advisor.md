@@ -33,4 +33,4 @@ Som rådgivare och coach hjälper jag er att få syn på vad som faktiskt sker i
 
 Vi börjar med en nulägesanalys: några samtal, en översikt av arkitektur, teknikstack och hur teamet arbetar. Detta leder till en sammanställning av insikter och rekommendationer kopplat till era mål.
 
-{% include contact-form.html %}
+<p><a href="/contact/" class="btn btn-primary">Jag vill bli kontaktad</a></p>

@@ -33,4 +33,4 @@ Målet är att ni ska gå därifrån med både konkreta mönster för fortsatt a
 
 Lämpligt deltagar-antal är 3-8 personer.
 
-{% include contact-form.html %}
+<p><a href="/contact/" class="btn btn-primary">Jag vill bli kontaktad</a></p>

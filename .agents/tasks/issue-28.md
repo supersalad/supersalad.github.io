@@ -30,7 +30,7 @@ Stop rendering the Google Forms contact form anywhere on the site. Service pages
 - [ ] The 8 affected pages are checked in a browser at desktop (~1280px) and mobile (~375px) widths, with no layout breaks or large empty gaps. Record the result in the Log.
 
 ## Plan
-- [ ] In each of the 6 service pages, replace `{% include contact-form.html %}` with a CTA link styled `btn btn-primary`, e.g. `<p><a href="/contact/" class="btn btn-primary">…</a></p>`. Use the page's existing `form-calltoaction` text as the label. For `_en_services/system-development.md`, fix the "Strenghen" typo to "Strengthen" in the label.
+- [x] In each of the 6 service pages, replace `{% include contact-form.html %}` with a CTA link styled `btn btn-primary`, e.g. `<p><a href="/contact/" class="btn btn-primary">…</a></p>`. Use the page's existing `form-calltoaction` text as the label. For `_en_services/system-development.md`, fix the "Strenghen" typo to "Strengthen" in the label.
 - [ ] Remove the now unused `form-*` front matter keys from those 6 pages. Remove only `form-*` keys.
 - [ ] In `contact.md` and `en/contact.md`, remove the include, the `<br><br>` spacers and the now unused `form-*` front matter keys. Adjust only the lead-in line before the details ("...det går även bra med:" / "Or reach out via other channels...") so it reads naturally without a form. Keep the intro sentence and the Mail/Email, Telefon/Phone and LinkedIn sections unchanged.
 - [ ] Leave `_includes/contact-form.html`, `assets/stylesheets/main.scss` and `README.md` (its "Adding google forms" section documents the retained component) untouched.
@@ -47,3 +47,4 @@ state: in-progress   <!-- ready-for-dev | in-progress | in-review | approved | b
 ## Log
 - 2026-11-21 coordinator: task created
 - 2026-11-21 developer: started work
+- 2026-11-21 developer: replaced the form include with a btn btn-primary CTA link on the 6 service pages (fixed "Strenghen" typo in the English label)

@@ -51,4 +51,4 @@ En väl anpassad arkitektur, synliggjord och hanterad teknisk skuld och automati
 * Och mycket annat (läs mer i mitt [CV](/cv))
 
 
-{% include contact-form.html %}
+<p><a href="/contact/" class="btn btn-primary">Stärk ert team med en erfaren utvecklare</a></p>

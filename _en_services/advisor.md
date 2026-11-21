@@ -34,4 +34,4 @@ As an advisor and coach, I help you see what is actually happening in everyday w
 
 We start with a current state analysis: a few conversations, an overview of architecture, tech stack, and how the team works. This leads to a summary of insights and recommendations linked to your goals.
 
-{% include contact-form.html %}
+<p><a href="/en/contact/" class="btn btn-primary">Get in touch and let's have an initial conversation</a></p>

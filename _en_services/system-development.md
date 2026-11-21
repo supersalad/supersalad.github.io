@@ -51,4 +51,4 @@ A well-adapted architecture, visible and managed technical debt, and automation 
 * Kubernetes
 * And much more (read more in my [CV](/assets/docs/Andreas_Folkesson_CV_en_250821.pdf))
 
-{% include contact-form.html %}
+<p><a href="/en/contact/" class="btn btn-primary">Strengthen your team with an experienced developer</a></p>

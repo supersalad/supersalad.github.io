@@ -33,4 +33,4 @@ The goal is for you to leave with both concrete patterns for continued work, and
 
 A suitable number of participants is 3-8 people.
 
-{% include contact-form.html %}
+<p><a href="/en/contact/" class="btn btn-primary">Contact me to learn more</a></p>

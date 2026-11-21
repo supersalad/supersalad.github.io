@@ -6,12 +6,6 @@ image:
   path: /assets/images/ai_workshop_banner.webp
   thumbnail: /assets/images/ai_workshop_400x200.webp
   caption: Photo by <a href="https://unsplash.com/@marvelous?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Marvin Meyer</a> on <a href="https://unsplash.com/photos/people-sitting-down-near-table-with-assorted-laptop-computers-SYTO3xs06fU?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Unsplash</a>
-
-form-calltoaction: Jag vill bli kontaktad
-form-thankyou: Tack för din kontakt!<br>Jag återkommer så snart som möjligt.
-form-header: Fyll i för att bli kontaktad
-form-intro: Inledande samtal är alltid kostnadsfria.
-
 ---
 ## Påskynda utvecklingsprocesser med AI-verktyg
 

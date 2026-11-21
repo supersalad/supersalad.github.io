@@ -2,23 +2,12 @@
 layout: page
 title: Kontakt
 cta: true
-
-form-calltoaction: Jag vill bli kontaktad
-form-thankyou: Tack för din kontakt!<br>Jag återkommer så snart som möjligt.
-form-header: Fyll i för att bli kontaktad
-form-intro: Inledande samtal är alltid kostnadsfria.
-form-pre-load: true
 ---
 
 Jag är nyfiken på att höra vilka utmaningar ni står inför. Hör av dig!
 
-{% include contact-form.html %}
+Du når mig via:
 
-<br><br>
-<br><br>
-
-
-...det går även bra med:
 ### Mail
 andreas@folkessontech.com
 

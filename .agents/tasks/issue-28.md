@@ -32,8 +32,8 @@ Stop rendering the Google Forms contact form anywhere on the site. Service pages
 ## Plan
 - [x] In each of the 6 service pages, replace `{% include contact-form.html %}` with a CTA link styled `btn btn-primary`, e.g. `<p><a href="/contact/" class="btn btn-primary">…</a></p>`. Use the page's existing `form-calltoaction` text as the label. For `_en_services/system-development.md`, fix the "Strenghen" typo to "Strengthen" in the label.
 - [x] Remove the now unused `form-*` front matter keys from those 6 pages. Remove only `form-*` keys.
-- [ ] In `contact.md` and `en/contact.md`, remove the include, the `<br><br>` spacers and the now unused `form-*` front matter keys. Adjust only the lead-in line before the details ("...det går även bra med:" / "Or reach out via other channels...") so it reads naturally without a form. Keep the intro sentence and the Mail/Email, Telefon/Phone and LinkedIn sections unchanged.
-- [ ] Leave `_includes/contact-form.html`, `assets/stylesheets/main.scss` and `README.md` (its "Adding google forms" section documents the retained component) untouched.
+- [x] In `contact.md` and `en/contact.md`, remove the include, the `<br><br>` spacers and the now unused `form-*` front matter keys. Adjust only the lead-in line before the details ("...det går även bra med:" / "Or reach out via other channels...") so it reads naturally without a form. Keep the intro sentence and the Mail/Email, Telefon/Phone and LinkedIn sections unchanged.
+- [x] Leave `_includes/contact-form.html`, `assets/stylesheets/main.scss` and `README.md` (its "Adding google forms" section documents the retained component) untouched.
 - [ ] Build, run html-proofer, and check the 8 pages on desktop and mobile widths.
 
 ## Out of scope
@@ -49,3 +49,5 @@ state: in-progress   <!-- ready-for-dev | in-progress | in-review | approved | b
 - 2026-11-21 developer: started work
 - 2026-11-21 developer: replaced the form include with a btn btn-primary CTA link on the 6 service pages (fixed "Strenghen" typo in the English label)
 - 2026-11-21 developer: removed the unused form-* front matter keys from the 6 service pages
+- 2026-11-21 developer: contact pages: removed include, <br><br> spacers and form-* keys; lead-in now "Du når mig via:" / "You can reach me via:"
+- 2026-11-21 developer: confirmed _includes/contact-form.html, assets/stylesheets/main.scss and README.md are untouched

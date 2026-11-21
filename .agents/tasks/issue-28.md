@@ -42,7 +42,8 @@ Stop rendering the Google Forms contact form anywhere on the site. Service pages
 - Adding contact CTAs to pages that never had the form (home, CV, posts, 404).
 
 ## Status
-state: ready-for-dev   <!-- ready-for-dev | in-progress | in-review | approved | blocked -->
+state: in-progress   <!-- ready-for-dev | in-progress | in-review | approved | blocked -->
 
 ## Log
 - 2026-11-21 coordinator: task created
+- 2026-11-21 developer: started work

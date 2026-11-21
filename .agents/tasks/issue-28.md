@@ -42,7 +42,7 @@ Stop rendering the Google Forms contact form anywhere on the site. Service pages
 - Adding contact CTAs to pages that never had the form (home, CV, posts, 404).
 
 ## Status
-state: in-progress   <!-- ready-for-dev | in-progress | in-review | approved | blocked -->
+state: in-review   <!-- ready-for-dev | in-progress | in-review | approved | blocked -->
 
 ## Log
 - 2026-11-21 coordinator: task created
@@ -53,3 +53,4 @@ state: in-progress   <!-- ready-for-dev | in-progress | in-review | approved | b
 - 2026-11-21 developer: confirmed _includes/contact-form.html, assets/stylesheets/main.scss and README.md are untouched
 - 2026-11-21 developer: verified: `bundle exec jekyll build --strict_front_matter` OK; htmlproofer `--disable-external --no-enforce-https` passed (17 files, 32 internal links; run with html-proofer 4.4.3 locally because the VM has Ruby 3.0 and 5.x needs >= 3.1, CI uses 5.x); no `id="googleForm"` in _site; the include grep only matches this task file under .agents/ (not a page, Jekyll skips it); `_includes/contact-form.html`, `main.scss`, `README.md` and `_data/` unchanged vs origin/main; only `form-*` keys removed from front matter
 - 2026-11-21 developer: browser check (headless Chrome, 1280px and 375px) of all 8 pages: CTA buttons render with theme style and wrap correctly on mobile, no horizontal overflow, no empty gap where the form was; contact pages flow intro -> lead-in -> Mail/Telefon/LinkedIn
+- 2026-11-21 developer: opened PR #29, state in-review
